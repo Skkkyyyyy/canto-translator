@@ -27,13 +27,16 @@ This hybrid approach improves accuracy for Cantonese-specific slang and colloqui
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | Vue.js |
-| Backend | FastAPI (Python) |
-| LLM | `llama-3.3-70b-versatile` |
-| Fuzzy Matching | `thefuzz` |
+### Frontend
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 
+### Backend
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+### AI / NLP
+![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-orange?style=for-the-badge)
+![thefuzz](https://img.shields.io/badge/thefuzz-Fuzzy_Matching-blueviolet?style=for-the-badge)
 ---
 
 ## Getting Started
