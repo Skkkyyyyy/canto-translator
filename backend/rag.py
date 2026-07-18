@@ -26,60 +26,66 @@ def rag(text:str):
             phrase = " ".join(tokens[start:start+n])
             phrases.append(phrase)
 
-    df_token = pd.read_csv('data/tokens100.csv')
+    df_token = pd.read_csv('data/glossary_master.csv')
     df_sentence = pd.read_csv('data/sentences.csv')
 
-    #direct match + fuzzy match 
+    #direct match + fuzzy match, checking the primary Romanized spelling plus any known variants
     matches_token = []
     for _, row in df_token.iterrows():
-        token = str(row["token"]).strip()
+        spellings = [str(row["Romanized"]).strip().lower()]
+        variants = str(row.get("Variants", "")).strip()
+        if variants and variants.lower() != "nan":
+            spellings += [v.strip().lower() for v in variants.split(",") if v.strip()]
 
-        for phrase in phrases:
-            if token == phrase:
-                matches_token.append({
-                    "token": row["token"],
-                    "cantonese": row.get("Cantonese", ""),
-                    "mandarin": row.get("Mandarin", ""),
-                    "english": row.get("English", ""),
-                    "function": row.get("Function", ""),
-                    "matched_phrase": phrase,
-                    "match_type": "direct",
-                    "score": 100
-                })
-            else:
-                score = fuzz.ratio(token, phrase)
-                if score >= 90:
-                    matches_token.append({
-                        "token": row["token"],
-                        "cantonese": row.get("Cantonese", ""),
-                        "mandarin": row.get("Mandarin", ""),
-                        "english": row.get("English", ""),
-                        "function": row.get("Function", ""),
-                        "matched_phrase": phrase,
-                        "match_type": "fuzzy",
-                        "score": score
-                    })
+        best = None
+        for spelling in spellings:
+            for phrase in phrases:
+                if spelling == phrase:
+                    candidate = (100, phrase, "direct")
+                elif fuzz.ratio(spelling, phrase) >= 90:
+                    candidate = (fuzz.ratio(spelling, phrase), phrase, "fuzzy")
+                else:
+                    continue
+                if best is None or candidate[0] > best[0]:
+                    best = candidate
+
+        if best:
+            score, matched_phrase, match_type = best
+            matches_token.append({
+                "token": row["Romanized"],
+                "cantonese": row.get("Cantonese", ""),
+                "mandarin": row.get("Mandarin", ""),
+                "english": row.get("English", ""),
+                "category": row.get("Category", ""),
+                "matched_phrase": matched_phrase,
+                "match_type": match_type,
+                "score": score
+            })
+    matches_token.sort(key=lambda m: m["score"], reverse=True)
     print(matches_token[:5])
 
     matches_sentence = []
-    for _,row in df_sentence.iterrows():
-        sentence = str(row['Sentence'])
-        score = fuzz.ratio(sentence, phrase)
-        if score >= 50:
+    for _, row in df_sentence.iterrows():
+        sentence = str(row['Sentence']).strip().lower()
+        score = fuzz.token_set_ratio(normalized_text, sentence)
+        if score >= 60:
             matches_sentence.append({
                 "sentence": row["Sentence"],
                 "cantonese": row.get("Cantonese",""),
                 "mandarin": row.get("Mandarin",""),
-                "matched_phrase": phrase,
+                "matched_phrase": normalized_text,
                 "match_type": "fuzzy",
                 "score": score
             })
+    matches_sentence.sort(key=lambda m: m["score"], reverse=True)
     print(matches_sentence)
 
     return {
     "token_matches": [
         {
             "token": m["token"],
+            "cantonese": m["cantonese"],
+            "mandarin": m["mandarin"],
             "english": m["english"],
             "score": m["score"]
         }

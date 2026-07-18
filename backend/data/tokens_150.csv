@@ -1,0 +1,159 @@
+﻿Category,Romanized,Cantonese,Mandarin,English
+,,,,
+# 基本词,,,,
+基本词,mm,唔,不,not
+基本词,m,唔,不,not
+基本词,ho,好,好,good
+基本词,hou,好,好,good
+基本词,hai,係,是,yes/is
+基本词,gum,咁,這樣,like this
+基本词,la,啦,啦,(particle)
+基本词,laa,啦,啦,(particle)
+基本词,lo,囉,囉,(particle)
+基本词,lor,囉,囉,(particle)
+基本词,ge,嘅,的,(particle)
+基本词,ga,㗎,的,(emphasis particle)
+基本词,gah,㗎,的,(emphasis particle)
+基本词,wor,喎,喎,(hearsay particle)
+基本词,meh,咩,嗎,(question particle)
+基本词,mah,嗎,吗,(question particle)
+基本词,ah,啊,啊,(sentence particle)
+基本词,baa,吧,吧,(suggestion particle)
+基本词,dik,的,的,(possessive particle)
+基本词,wo,喎,喎,(tone particle)
+
+,,,,
+# 人称,,,,
+人称,ngo,我,我,I/me
+人称,nei,你,你,you
+人称,kui,佢,他/她,he/she
+人称,ngo dei,我哋,我們,we/us
+人称,nei dei,你哋,你們,you all
+人称,kui dei,佢哋,他們,they
+,,,,
+# 动词,,,,
+动词,sik,識,懂,know how
+动词,gong,講,說,speak
+动词,tai,睇,看,look/watch
+动词,sik ye,食嘢,吃東西,eat
+动词,faan uk,返屋企,回家,go home
+动词,faan gung,返工,上班,go to work
+动词,faan hok,返學,上學,go to school
+动词,fan gaau,瞓覺,睡覺,sleep
+动词,heoi,去,去,go
+动词,maai,買,買,buy
+动词,yau,有,有,have
+动词,mou,冇,没有,not have
+动词,duk,得,可以,can
+动词,cc,睇睇,看一看,take a look
+动词,chut,出,出,go out
+动词,chut lei,出嚟,出来,come out
+动词,fan,返,回,return
+动词,bei,俾,給,give
+动词,pak,拍,拍,take photo
+动词,zip,摺,折叠,fold
+动词,chur,消耗能量、資源,,to exhaust; to exploit
+动词,yurk,約,约,date/go out
+动词,jap,食 ,吃 ,eat
+,,,,
+# 形容词,,,,
+形容词,leng,靚,漂亮,pretty
+形容词,peng,平,便宜,cheap
+形容词,gwai,貴,貴,expensive
+形容词,lek,叻,聰明,smart
+形容词,hou gui,好攰,很累,tired
+形容词,hoi sum,開心,开心,happy
+形容词,jeng,正,很棒,great
+形容词,ging,勁,厉害,awesome
+形容词,hou chi,好似,好像,seem like
+形容词,ci,似,像,similar
+形容词,minghin,明顯,明显,obvious
+形容词,arm,啱,對,correct
+形容词,dor,多,多,more
+,,,,
+
+# 疑问词,,,,
+疑问词,dim gai,點解,為什麼,why
+疑问词,dim,點,怎麼樣,how
+疑问词,bin go,邊個,誰,who
+疑问词,mat ye,乜嘢,什麼,what
+疑问词,gei do,幾多,多少,how many
+疑问词,gei si,幾時,什麼時候,when
+疑问词,meh si,咩事,什麼事,what happened
+
+,,,,
+# 常用句,,,,
+常用句,mm ho gum la,唔好咁啦,不要這樣,don’t do this
+常用句,mm goi,唔該,麻煩/謝謝,excuse me
+常用句,do jeh,多謝,謝謝,thank you
+常用句,mm sai,唔使,不用,no need
+常用句,mm gan yiu,唔緊要,沒關係,it’s okay
+常用句,hai mm hai,係唔係,是不是,is it
+常用句,ho la,好啦,好了,okay then
+常用句,nvm,無所謂,无所谓,never mind
+常用句,dou duk,都得,都可以,also okay
+常用句,yuen loi,原來,原来,turns out
+常用句,arm arm,啱啱,剛剛,just now
+常用句,joi,再,再,again
+常用句,sin,先,先,first
+常用句,jau,就,就,then
+,,,,
+# 时间,,,,
+时间,yi ga,而家,現在,now
+时间,gam jat,今日,今天,today
+时间,ting jat,聽日,明天,tomorrow
+时间,kam jat,琴日,昨天,yesterday
+时间,tnt,今晚,今晚,tonight
+,,,,
+# 日常,,,,
+日常,chut moon,出門,出门,go out
+日常,daiga,大家,大家,everyone
+日常,leng nui,靚女,美女,pretty girl
+日常,leng jai,靚仔,帅哥,handsome guy
+日常,jaijai,仔仔,男生,boy
+日常,zip liba,摺liba,自习,study
+,,,,
+# 语气词/结构,,,,
+语气词,la,啦,啦,(final particle)
+语气词,lor,囉,囉,(obvious tone)
+语气词,wo,喎,喎,(hearsay)
+语气词,ga,㗎,㗎,(emphasis)
+语气词,meh,咩,嗎,(question)
+语气词,ah,啊,啊,(ending tone)
+语气词,har,吓,啊？,huh
+语气词,gua,掛,吧,huh
+
+,,,,
+# 俚语 / 网络,,,,
+俚语,gg la,GG啦,完蛋了,we’re done
+俚语,hea,hea,混/偷懒,chill lazily
+俚语,pok gai,仆街,去死,vulgar insult
+俚语,on9,戇鳩,傻瓜,idiot
+俚语,sls,笑撚死,笑死,lol
+俚语,cls,痴撚線,疯了,crazy
+俚语,diu,屌,操,fuck
+俚语,sau pei,收皮,结束,shut up
+俚语,mk,mk妹,潮人,trendy girl
+俚语,jm9,做乜,干嘛,what the hell
+俚语,gum l jeng,咁L正,超棒,very awesome
+俚语,mud9,乜9,什么鬼,wtf
+俚语,zip liba,摺liba,在圖書館學習,study in library
+俚语,chur到盡,chur到盡,拼尽全力做某事,to exploit something until depletion
+俚语,shiba,西八,西八,damn it
+
+,,,,
+# 补充高频（很重要 for RAG）,,,,
+补充,horneng,可能,可能,maybe
+补充,gen,梗,一定,surely
+补充,gen hai la,梗係啦,当然,of course
+补充,mei,未,还没,not yet
+补充,jor,咗,了,(past tense)
+补充,liu,了,了,(completed)
+补充,guo,過,过,(experience)
+补充,ju,住,着,(continuous)
+补充,da,打,打,hit/do
+补充,lei,嚟,来,come
+补充,hoi sum d,開心啲,开心点,be happier
+补充,horyi,可以,可以,can
+补充,mon,屏幕,屏幕,screen
+补充,gum jeng,咁正,很棒,so good

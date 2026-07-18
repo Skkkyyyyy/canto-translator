@@ -1,11 +1,9 @@
 from rag import rag
 from openai import OpenAI
-from dotenv import load_dotenv 
-import os 
-from groq import Groq
+from dotenv import load_dotenv
+import os
 
 load_dotenv()
-api_key = os.getenv("GROQ_API_KEY")
 
 def llm(text:str):
     messages = [
@@ -57,15 +55,17 @@ def llm(text:str):
     }
     ]
 
-    client = Groq()
+    client = OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=os.getenv("OPENROUTER_API_KEY"),
+    )
     completion = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="qwen/qwen3.7-plus",
         messages=messages,
-        temperature=1,
-        max_completion_tokens=1024,
-        top_p=1,
+        temperature=0.2,
+        max_tokens=1024,
+        top_p=0.9,
         stream=True,
-        stop=None
     )
 
     results = ""

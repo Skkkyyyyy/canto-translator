@@ -24,12 +24,20 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from 'vue'
+import {ref, watch} from 'vue'
 
 const message = ref('')
 const cantonese = ref('')
 const mandarin = ref('')
 const english = ref('')
+
+watch(message,(newVal) => {
+    if(newVal.trim()===''){
+        cantonese.value = ''
+        mandarin.value = ''
+        english.value = ''
+    }
+})
 
 //connect to the backend (method, headers, body)
 const sendMessage = async() => {

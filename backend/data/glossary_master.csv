@@ -1,0 +1,279 @@
+Type,Category,Romanized,Variants,Cantonese,Mandarin,English,needs_review
+phrase,,can mm can,,can唔can,可不可以,,False
+phrase,,chuk gai,,出街,出门逛街,,False
+phrase,,da binlo,,打邊爐,吃火锅,,False
+phrase,,gen hai la,,梗系啦,当然啦,,False
+phrase,,hai gua,,係啩,是吧,,False
+phrase,,hai mai,,係咪,是不是,,False
+phrase,,ho charm,,好charm,好有个人魅力,,False
+phrase,,ho ging,,好勁,好厉害,,False
+phrase,,ho hurng,,好香,,,False
+phrase,,ho leng,,好靚,好漂亮,,False
+phrase,,ho mm horyi,,可唔可以,可不可以,,False
+phrase,,ho qq,,好得意,好可以,so cute,False
+phrase,,lan hoi,,躝開,滚开,fuck off,False
+phrase,,lo best,老best,老best,老朋友/最好的朋友,,False
+phrase,,marn marn,,慢慢,慢慢来,,False
+phrase,,mm gup,,唔急,不急,,False
+phrase,,mm sik,,唔識,不会/不认识,dun understand / dun know,False
+phrase,,mm yat ding,,唔一定,不一定,,False
+phrase,,molly yau,,冇理由,没理由,,False
+phrase,,polly shum,,玻璃心,玻璃心,,False
+phrase,,sik farn,,食飯,吃饭,,False
+phrase,,siu din,,少癲,有点离谱,,False
+phrase,,siu siu,,少少,一点点,a little,False
+phrase,,siu sum,,小心,小心,,False
+phrase,,sun fu sai,,辛苦曬,,,False
+phrase,,tse tse,,謝謝,谢谢,thanks,False
+phrase,,wui mm wui,,會唔會,会不会,,False
+phrase,,yi wai,yiwei,以為,以为,,False
+phrase,,ying goi,,應該,,,False
+phrase,adj,ho chi,hou chi,好似,好像,seem like,False
+phrase,adj,hoi sum,,開心,开心,happy,False
+phrase,adj,hou gui,,好攰,很累,tired,False
+phrase,daily,chut moon,,出門,出门,go out,False
+phrase,daily,leng jai,,靚仔,帅哥,handsome guy,False
+phrase,daily,leng nui,,靚女,美女,pretty girl,False
+phrase,en,bye bye,,再见,再见,goodbye,False
+phrase,en,game over,,完蛋,完蛋,finished,False
+phrase,en,no eye see,,不理睬,不理睬,ignore,False
+phrase,en,no money no talk,,没钱免谈,没钱免谈,no money no talk,False
+phrase,en,part time,,兼职,兼职,part-time job,False
+phrase,expression,arm arm,,啱啱,刚刚,just now,False
+phrase,expression,do jeh,dor tse,多謝,谢谢,thank you,False
+phrase,expression,dou duk,,都得,都可以,also okay,False
+phrase,expression,fly up,,fly up,甩掉（对象）,break up,True
+phrase,expression,ga yau,"garyau,gayau",加油,加油,keep it up,False
+phrase,expression,game over,,game over,完蛋,finished,True
+phrase,expression,gum l jeng,,咁L讚,,,False
+phrase,expression,hai mm hai,,係唔係,是不是,is it,False
+phrase,expression,ho la,,好啦,好了,okay then,False
+phrase,expression,mm gan yiu,,唔緊要,没关系,it's okay,False
+phrase,expression,mm goi,,唔該,麻烦/谢谢,excuse me,False
+phrase,expression,mm ho gum la,,唔好咁啦,不要这样,don't do this,False
+phrase,expression,mm sai,,唔使,不用,no need,False
+phrase,expression,no eye see,,no eye see,不理睬,ignore,True
+phrase,expression,no money no talk,,no money no talk,没钱免谈,no money no talk,True
+phrase,expression,siu sei,,笑死,笑死,so funny,False
+phrase,greeting,bye bye,,bye bye,再见,goodbye,True
+phrase,logic,bei mm bei,,俾唔俾,给不给,give or not,False
+phrase,logic,can mm can,"duc mm duc,duk mm duk",得唔得,可不可以,can or not,False
+phrase,logic,gen hai la,,梗係啦,当然,of course,False
+phrase,logic,sai mm sai,,使唔使,需不需要,need or not,False
+phrase,phrase,zip liba,,摺利是,摺利是,fold red packet,False
+phrase,pronoun,keoi dei,kui dei,佢哋,他们,they,False
+phrase,pronoun,nei dei,,你哋,你们,you all,False
+phrase,pronoun,ngo dei,,我哋,我们,we,False
+phrase,question,bin go,,邊個,谁,who,False
+phrase,question,dim gai,,點解,为什么,why,False
+phrase,question,gei do,,幾多,多少,how many,False
+phrase,question,gei si,,幾時,什么时候,when,False
+phrase,question,mat ye,,乜嘢,什么,what,False
+phrase,question,meh si,mehsi,咩事,什么事,what happened,False
+phrase,time,gam jat,,今日,今天,today,False
+phrase,time,kam jat,,琴日,昨天,yesterday,False
+phrase,time,ting jat,,聽日,明天,tomorrow,False
+phrase,time,yi ga,,而家,现在,now,False
+phrase,verb,chut lei,,出嚟,出来,come out,False
+phrase,verb,chut lei,,出來,出来,come out,False
+phrase,verb,faan gung,,返工,上班,go to work,False
+phrase,verb,faan hok,,返學,上学,go to school,False
+phrase,verb,faan uk,,返屋企,回家,go home,False
+phrase,verb,fan gaau,,瞓覺,睡觉,sleep,False
+phrase,verb,sik ye,,食嘢,吃东西,eat,False
+phrase,work,part time,,做part time,兼职,part-time job,False
+phrase,俚语,gg la,,GG啦,完蛋了,we’re done,False
+phrase,俚语,gum l jeng,,咁L正,超棒,very awesome,False
+phrase,俚语,hoi sem,,開sem,新學期開始,new semester start,False
+phrase,俚语,pok gai,,仆街,去死,vulgar insult,False
+phrase,俚语,sau pei,,收皮,结束,shut up,False
+phrase,俚语,yuen sem,,完sem,學期結束,end semester,False
+phrase,学校/日常,gg la,,完蛋啦,完蛋了,we're done for,False
+phrase,学校/日常,late drop,,退課,退課,drop a course,False
+phrase,常用句,yuen loi,,原來,原来,turns out,False
+phrase,日常,zip liba,,摺liba,自习,study,False
+phrase,补充,gum jeng,,咁正,很棒,so good,False
+phrase,补充,hoi sum d,,開心啲,开心点,be happier,False
+token,,7tau,7tou,柒頭,,,False
+token,,aa,,AA,A錢,go dutch,True
+token,,b4,,之前,之前,,False
+token,,c9,,師奶,阿婆,,False
+token,,chau,,臭,,,False
+token,,cheng,,請,,,False
+token,,chill,,放鬆/舒服,放松/舒服,,False
+token,,chur到爆,,超級忙,超级忙,,False
+token,,cuz,,因為,因为,because,False
+token,,din,,癲,,,False
+token,,ding,,定係,還是,,False
+token,,ding,,頂,,,False
+token,,dou,,到/都,都,,False
+token,,dukham,,得閒,有空,free / have time,False
+token,,fan,,瞓,睡觉,sleep,False
+token,,flop,,失敗/表現差,搞砸/失败/表现差,,False
+token,,gao,,搞,,,False
+token,,gei,,幾,几,,False
+token,,har,,吓？,啥,,False
+token,,icic,,我明白了,我明白了,,False
+token,,jap,,jap,吃,,True
+token,,jhgg,,即係咁講,意思就是,,False
+token,,ks,,其實,其实,,False
+token,,lan,,躝,,,False
+token,,lei,,來,来,,False
+token,,lun,,撚（髒話）,,,False
+token,,mat,,乜,什么,what,False
+token,,mic,,咪,麦克风,microphone,False
+token,,mnyy,,must need 要有,,must need,False
+token,,ofc,,當然,當然,of course,False
+token,,ootd,,今日穿搭,今日穿搭,outfit of the day,False
+token,,piu,,漂,漂染,,False
+token,,pua,,情緒操控,情绪操控,emotional manipulation,False
+token,,shiba,,西巴（韩语骂人的词语）,西巴（韩语骂人的词语）,,False
+token,,shrg,,想,想,,False
+token,,tai,,太,太,,False
+token,,teng,,聽,听,listen,False
+token,,tim,,添,还,also,False
+token,,yam,,飲,喝,drink,False
+token,,yum,,好食,好吃,yummy,False
+token,,zau,,走,走,leave,False
+token,,ze,,啫,而已,only,False
+token,,zhongyiu,,仲要,还要,,False
+token,,zihai,,即係,就是,,False
+token,,zo,,做,做,do,False
+token,,入pool,,開始拍拖,开始谈恋爱,,False
+token,,冇mood,,冇mood,没心情/没情绪,,False
+token,,冇晒face,,冇晒菲士,没面子,,False
+token,,出pool,,脫單,脱单，找到对象,,False
+token,,摆pose,,摆pose,摆姿势,,False
+token,,蛋tart,,蛋挞,蛋挞,egg tart,False
+token,,車呔,,車呔,轮胎,tyre,False
+token,activity,facial,,做facial,做美容,facial treatment,False
+token,activity,shopping,,去shopping,去购物,shopping,False
+token,adj,arm,,啱,對,correct,False
+token,adj,gin,ging,勁,厉害,awesome,False
+token,adj,gwai,,貴,貴,expensive,False
+token,adj,jeng,mm7,正,很棒,great,False
+token,adj,lek,,叻,聰明,smart,False
+token,adj,leng,,靚,漂亮,pretty,False
+token,adj,peng,,平,便宜,cheap,False
+token,adjective,fit,,fit D,更健康,fit,True
+token,adjective,hit,,hit,流行,popular,True
+token,adjective,inch,,inch,嚣张,arrogant,True
+token,adjective,sharp,,sharp,时尚/醒目,stylish,True
+token,adjective,smart,,smart,聪明/时尚,smart,True
+token,adjective,top,,top,顶级,top,True
+token,adjective,upset,,upset,不开心,upset,True
+token,adv,dor,,多,多,more,False
+token,adverb,dou,,都,都,also,False
+token,en,check,,check,检查,check,True
+token,en,hi,,hi,嗨,hello,True
+token,en,mind,,mind,介意,mind,True
+token,en,oj,ok,OK,好的,okay,True
+token,en,sorry,,sorry,对不起,sorry,True
+token,expression,cc,,看看,看一看,take a look,False
+token,expression,cc,,（笑聲）,（笑）,haha / hehe,False
+token,expression,see,,see,明白,understand,True
+token,expression,thanks,thx,thanks,謝謝,thanks,True
+token,expression,yeah,,yeah,是的,yeah,True
+token,modal,ho,,可,可以,can / okay,False
+token,modal,wui,,會,會,will,False
+token,noun,band,,band,乐队,band,True
+token,noun,bbq,,BBQ,烧烤,barbecue,True
+token,noun,case,,case,案例,case,True
+token,noun,cash,,cash,现金,cash,True
+token,noun,cast,,cast,演员阵容,cast,True
+token,noun,fans,,fans,粉丝,fans,True
+token,noun,file,,file,文件,file,True
+token,noun,partner,,partner,伙伴,partner,True
+token,noun,party,,party,派对,party,True
+token,noun,percent,,percent,百分比,percent,True
+token,noun,pose,,pose,姿势,pose,True
+token,particle,ah,,啊,啊,(ending),False
+token,particle,baa,,吧,吧,(suggestion),False
+token,particle,ga,gah,㗎,的,(emphasis),False
+token,particle,ge,,嘅,的,(particle),False
+token,particle,gum,,咁,这样,like this,False
+token,particle,hai,,係,是,yes/is,False
+token,particle,ho,hou,好,好,good,False
+token,particle,jeh,,姐,而已,only,False
+token,particle,la,"laa,lah",啦,啦,(particle),False
+token,particle,lo,lor,囉,囉,(particle),False
+token,particle,m,mm,唔,不,not,False
+token,particle,mah,meh,咩,吗,(question),False
+token,particle,wo,wor,喎,喎,(hearsay),False
+token,phrase,打band,,打band,合奏,play music together,False
+token,phrase,收band,,收band,结束,end/finish,False
+token,phrase,開band,,開band,开始,start (music/action),False
+token,profanity,diu,,diu,操,,True
+token,profanity,l,,Leng,,,True
+token,profanity,sldpk,,笑L到坡街,我操笑死我了,,False
+token,pronoun,keoi,kui,佢,他/她,he/she,False
+token,pronoun,nei,,你,你,you,False
+token,pronoun,ngo,,我,我,I/me,False
+token,shortform,compu,,compu,电脑,computer,True
+token,shortform,pro,,pro,专业,professional,True
+token,shortform,quali,,quali,资格,qualification,True
+token,shortform,u,入u,入U,上大学,university,False
+token,shortform,un,,un,明白,understand,True
+token,slang,ceoi,,脆,脆（Threads的香港花名）,Threads (the social media app; HK nickname),False
+token,slang,cls,,痴撚線,疯了,crazy,False
+token,slang,diu,,屌,操,fuck,False
+token,slang,hea,,hea,混,chill lazily,True
+token,slang,on9,,戇鳩,傻瓜,idiot,False
+token,state,cheap,,cheap cheap 地,很便宜/低质,cheap,False
+token,state,high,,high high 地,很兴奋,excited,False
+token,time,jau,,就,就,then,False
+token,time,joi,,再,再,again,False
+token,time,sin,,先,先,first,False
+token,time,tnt,,今晚,今晚,tonight,False
+token,verb,bei,,俾,給,give,False
+token,verb,duc,duk,得,可以,can,False
+token,verb,duk,,篤,戳,poke / tap,False
+token,verb,gong,,講,說,speak,False
+token,verb,hea,,嘥 / hea,休息/混,chill lazily,False
+token,verb,heoi,hui,去,去,go,False
+token,verb,keep,,keep,保持,keep,True
+token,verb,maai,,買,買,buy,False
+token,verb,mo,mou,冇,没有,not have,False
+token,verb,pak,,拍,拍,take photo,False
+token,verb,sik,,識,懂,know,False
+token,verb,tai,,睇,看,look,False
+token,verb,yau,,有,有,have,False
+token,work,o.t.,,開O.T.,加班,overtime,False
+token,俚语,chur到盡,,chur到盡,拼尽全力做某事,to exploit something until depletion,False
+token,俚语,hea,,係咁意,隨便,do it half-heartedly,False
+token,俚语,jm9,,做乜,干嘛,what the hell,False
+token,俚语,mk,,mk妹,潮人,trendy girl,False
+token,俚语,mud9,,乜9,什么鬼,wtf,False
+token,俚语,m巾,,姨媽巾,卫生巾,sanitary napkin,False
+token,俚语,shiba,,西八,西八,damn it,False
+token,俚语,sls,,笑撚死,笑死,lol,False
+token,俚语,射波,,射波,翘课，请假,take leave on purpose / skip work or class for personal reasons,False
+token,动词,cc,,睇睇,看一看,take a look,False
+token,动词,chur,,消耗能量、資源,,to exhaust; to exploit,False
+token,动词,chut,,出,出,go out,False
+token,动词,fan,,返,回,return,False
+token,动词,jap,,食,吃,eat,False
+token,动词,yurk,,約,约,date/go out,False
+token,动词,zip,,摺,折叠,fold,False
+token,基本词,dik,,的,的,(possessive particle),False
+token,基本词,mah,,嗎,吗,(question particle),False
+token,常用句,nvm,,無所謂,无所谓,never mind,False
+token,形容词,ci,,似,像,similar,False
+token,形容词,minghin,,明顯,明显,obvious,False
+token,日常,daiga,,大家,大家,everyone,False
+token,日常,jaijai,,仔仔,男生,boy,False
+token,疑问词,dim,,點,怎麼樣,how,False
+token,补充,da,,打,打,hit/do,False
+token,补充,gen,,梗,一定,surely,False
+token,补充,guo,,過,过,(experience),False
+token,补充,horneng,,可能,可能,maybe,False
+token,补充,horyi,,可以,可以,can,False
+token,补充,jor,,咗,了,(past tense),False
+token,补充,ju,,住,着,(continuous),False
+token,补充,lei,,嚟,来,come,False
+token,补充,liu,,了,了,(completed),False
+token,补充,mei,,未,还没,not yet,False
+token,补充,mon,,屏幕,屏幕,screen,False
+token,语气词,gua,,掛,吧,huh,False
+token,语气词,gua,,啩,,,False
+token,语气词,har,,吓,啊？,huh,False
