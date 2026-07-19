@@ -1,33 +1,204 @@
 Type,Category,Romanized,Variants,Cantonese,Mandarin,English,needs_review
-phrase,,can mm can,,can唔can,可不可以,,False
-phrase,,chuk gai,,出街,出门逛街,,False
-phrase,,da binlo,,打邊爐,吃火锅,,False
-phrase,,gen hai la,,梗系啦,当然啦,,False
-phrase,,hai gua,,係啩,是吧,,False
-phrase,,hai mai,,係咪,是不是,,False
-phrase,,ho charm,,好charm,好有个人魅力,,False
-phrase,,ho ging,,好勁,好厉害,,False
-phrase,,ho hurng,,好香,,,False
-phrase,,ho leng,,好靚,好漂亮,,False
-phrase,,ho mm horyi,,可唔可以,可不可以,,False
-phrase,,ho qq,,好得意,好可以,so cute,False
-phrase,,lan hoi,,躝開,滚开,fuck off,False
-phrase,,lo best,老best,老best,老朋友/最好的朋友,,False
-phrase,,marn marn,,慢慢,慢慢来,,False
-phrase,,mm gup,,唔急,不急,,False
-phrase,,mm sik,,唔識,不会/不认识,dun understand / dun know,False
-phrase,,mm yat ding,,唔一定,不一定,,False
-phrase,,molly yau,,冇理由,没理由,,False
-phrase,,polly shum,,玻璃心,玻璃心,,False
-phrase,,sik farn,,食飯,吃饭,,False
-phrase,,siu din,,少癲,有点离谱,,False
-phrase,,siu siu,,少少,一点点,a little,False
-phrase,,siu sum,,小心,小心,,False
-phrase,,sun fu sai,,辛苦曬,,,False
-phrase,,tse tse,,謝謝,谢谢,thanks,False
-phrase,,wui mm wui,,會唔會,会不会,,False
-phrase,,yi wai,yiwei,以為,以为,,False
-phrase,,ying goi,,應該,,,False
+phrase,Appellation,aa caa,,阿差,,"South Asian especially, Indian and Pakistanis",False
+phrase,Appellation,and si daa,,絲打,,"Sound like the English words ""Mother"", ""Father"", ""Brother"" and ""Sister"" respectively; Mother, Father, Brother and Sister respectively",False
+phrase,Appellation,baa daa,,巴打,,"Sound like the English words ""Mother"", ""Father"", ""Brother"" and ""Sister"" respectively; Mother, Father, Brother and Sister respectively",False
+phrase,Appellation,ban mui,,賓妹,,"Filipino boys and Filipino girls respectively, especially refer to Filipino domestic employees",False
+phrase,Appellation,ban zai,,賓仔,,"Filipino boys and Filipino girls respectively, especially refer to Filipino domestic employees",False
+phrase,Appellation,caa po,,差婆,,Policemen and Policewomen respectively,False
+phrase,Appellation,caai lou,,差佬,,Policemen and Policewomen respectively,False
+phrase,Appellation,daai ji lung,,大耳窿,,Literally means Big ear hole; Loanshark,False
+phrase,Appellation,faa daa,,花打,,"Sound like the English words ""Mother"", ""Father"", ""Brother"" and ""Sister"" respectively; Mother, Father, Brother and Sister respectively",False
+phrase,Appellation,faa saang jau,,花生友,,"Literally means ""Peanut guy"";  Bystanders / Onlookers",False
+phrase,Appellation,gaa mui,,㗎妹,,Japanese boys and Japanese girls respectively,False
+phrase,Appellation,gaa zai,,㗎仔,,Japanese boys and Japanese girls respectively,False
+phrase,Appellation,gam so si,,金鎖匙,,"Literally means ""Golden key""; Silver spoon (People who are born in rich families)",False
+phrase,Appellation,gwai lou,,鬼佬,,"referred to Gweilo; Caucasian men, Caucasian women, Caucasian boys and Caucasian girls respectively",False
+phrase,Appellation,gwai mui,,鬼妹,,"referred to Gweilo; Caucasian men, Caucasian women, Caucasian boys and Caucasian girls respectively",False
+phrase,Appellation,gwai po,,鬼婆,,"referred to Gweilo; Caucasian men, Caucasian women, Caucasian boys and Caucasian girls respectively",False
+phrase,Appellation,gwai zai,,鬼仔,,"referred to Gweilo; Caucasian men, Caucasian women, Caucasian boys and Caucasian girls respectively",False
+phrase,Appellation,ji ng zai,,二五仔,,"Literally means ""Two"" ""Five"" Son; Insurgent, rebel, traitor or snitch. This comes from Triad argot",False
+phrase,Appellation,lou si fat,,老屎忽,,"Literally means old buttocks (Alternatively, Old seafood - seafood sounds like Cantonese word ""屎忽""); Old fart",False
+phrase,Appellation,maa daa,,媽打,,"Sound like the English words ""Mother"", ""Father"", ""Brother"" and ""Sister"" respectively; Mother, Father, Brother and Sister respectively",False
+phrase,Appellation,sai man zai,,細蚊仔,,Literally means small mosquito; Children / Kids,False
+phrase,Appellation,se wong,,蛇王,,Literally means Snake King; Could either describe someone who is a professional salary stealer or a professional snake catcher,False
+phrase,Appellation,seoi jyu,,水魚,,"Literally means Water fish; 1). - Turtle or Trionychidae. 2.) - Easy mark (Someone who is easily deceived, fooled or victimised)",False
+phrase,Appellation,sik sak mai,,食塞米,,Freeloader / Sponger,False
+phrase,Appellation,sik ziu,,食蕉,,"Literally to eat banana and sounds like the English word ""Secure""; 1.)Security guard. 2.) Eat excrement, as bananas look like excrement",False
+phrase,"Building, construction and property",caap zam lau,,插針樓,,Literally means Needle insertion building (Toothpick building); Pencil tower,False
+phrase,"Building, construction and property",coeng ming kai,,長命契,,Literally means deed of longevity; Joint Tenancy,False
+phrase,"Building, construction and property",daai zam baan,,大砧板,,Literally means big cutting board; Transfer plate,False
+phrase,"Building, construction and property",deng kai,,釘契,,Literally means nailing the title or deed; Encumbrance,False
+phrase,"Building, construction and property",gaau gat,,交吉,,The property is sold with vacant possession (NOT subject to a tenancy),False
+phrase,"Building, construction and property",hak ci,,黑廁,,Literally means Black toilet; Bathroom without Window,False
+phrase,"Building, construction and property",laan mei lau,,爛尾樓,,Literally means Tail-rotten building; Unfinished building,False
+phrase,"Building, construction and property",lau faa,,樓花,,Literally means Apartment-flowers; Off-plan property,False
+phrase,"Building, construction and property",naap mai lau,,納米樓,,Literally means Nanometre Houses; Nano Flats (apartments which Saleable area are measuring less than 215 sq. ft.),False
+phrase,"Building, construction and property",nai tau ce,,泥頭車,,Literally means Clay-head-cars; Dump truck,False
+phrase,"Building, construction and property",ngaa cim lau,,牙籤樓,,Literally means Needle insertion building (Toothpick building); Pencil tower,False
+phrase,"Building, construction and property",ngan zyu pun,,銀主盤,,"Foreclosure, mainly in Real Estate, like apartments and houses",False
+phrase,"Building, construction and property",sek si,,石屎,,Literally means Stone-Feces; Concrete,False
+phrase,"Building, construction and property",si bo ling,,士波令,,"Sound like English word, ""spalling""; Spalling",False
+phrase,"Building, construction and property",tek goek baan,,踢腳板,,"Literally means Kick-Feet-Board; 1.) - Toe board, 2.) Baseboard",False
+phrase,"Building, construction and property",tin lo ce,,田螺車,,Literally means River snail-cars; Concrete mixer truck,False
+phrase,"Building, construction and property",tong fong,,劏房,,Literally means Butchered rooms; Subdivided flats,False
+phrase,"Building, construction and property",waat nai ce,,挖泥車,,"Literally means Excavate-mud-vehicle. (Alternatively, Caan2 nai4 ce1 (剷泥車) - Literally means Shovel-mud-vehicle, or Gai1 tau4 (雞頭) - Literally means Chicken head); Excavator",False
+phrase,"Building, construction and property",zyu lik coeng,,主力牆,,Literally means Main-force-wall; Load-bearing wall,False
+phrase,Business terminology,caau jau jyu,,炒魷魚,,Literally to stir-fry a squid; Dismissal,False
+phrase,Business terminology,daai ceot hyut,daai chut hyud,大出血,,Literally means Heavy Bleeding; To cost an arm and a leg / pay a small fortune,False
+phrase,Business terminology,daat deng,,撻訂,,The seller forfeits buyer's deposit after the buyer failed to complete the deal,False
+phrase,Business terminology,dan dung gu,,燉冬菇,,"Literally to simmer Shiitake Mushrooms; Demotion, this slang originated from Hong Kong Police Force in British Hong Kong era",False
+phrase,Business terminology,fei gai caan,,肥雞餐,,Literally means Fat Chicken Meal; A generous voluntary severance package or Golden handshake,False
+phrase,Business terminology,haai fo,,蟹貨,,"Literally means Crab-Goods; Stocks or goods that have decreased in value, such that selling it will result in loss",False
+phrase,Business terminology,paak wu jing,,拍烏蠅,,Literally to swat flies; having a slack business,False
+phrase,Business terminology,se bo,,卸波,,Literally to unload shoulder (to unload ball); to bunk off or to deny or refuse responsibility,False
+phrase,Business terminology,se bok,seh boh,卸膊,,Literally to unload shoulder (to unload ball); to bunk off or to deny or refuse responsibility,False
+phrase,Business terminology,sik mou cing gai,,食無情雞,,Literally to eat merciless chicken; To receive a Pink slip,False
+phrase,Business terminology,zap lap,,執笠,,To close down / To go bankrupt,False
+phrase,Company,cat zai,,七仔,,"Literally means ""Seven"" son; 7-Eleven",False
+phrase,Company,daai zau dim,,大酒店,,Literally means Big hotel; 1.) - Hongkong and Shanghai Hotels. 2.) - Funeral home,False
+phrase,Company,gai gei,,雞記,,"Etymology: 雞 (Chicken) + 記 (""meaningless suffix""); KFC restaurant",False
+phrase,Company,lou din,,老電,,"Etymology: 老 (""old"", ""elder"" or ""ancient"") + 電 (Literally means ""Electricity"" or ""Tele-""; PCCW",False
+phrase,Company,m gei,,M記,,McDonald's,False
+phrase,Criminal terminology,baak fan,,白粉,,Literally means White Powder; Heroin,False
+phrase,Criminal terminology,baau gaak,,爆格,,"Sound like English word, ""burglar""; Burglary",False
+phrase,Criminal terminology,ceot caak,,出冊,,"Etymology: 出 (""means Exit"") + 冊 (Chinese character looks like jail frame);To be released from prison",False
+phrase,Criminal terminology,ceot maau,,出貓,,Literally means Exiting cat; Cheating in examination,False
+phrase,Criminal terminology,daa ho baau,,打荷包,,Pickpocketing,False
+phrase,Criminal terminology,deoi cou,,隊草,,Literally to take grass / weed; Cannabis smoking,False
+phrase,Criminal terminology,gaam dan,,監躉,,Prisoner or ex-Prisoner,False
+phrase,Criminal terminology,hoi pin,,開片,,Literally to start filming; Gang fight with weapons,False
+phrase,Criminal terminology,jap caak,,入冊,,"Etymology: 入 (""means Enter"") + 冊 (Chinese character looks like jail frame); To be imprisoned",False
+phrase,Criminal terminology,leon daai mai,,輪大米,,Literally to queue for rice; Gang rape,False
+phrase,Criminal terminology,lou lap,,老笠,,"Etymology: 老 (""meaningless prefix"") + 笠 (Sound like English word ""rob""); Robbery",False
+phrase,Criminal terminology,maa jip,,孖葉,,Literally means Double leaves; Handcuffs,False
+phrase,Criminal terminology,ngau juk gon,,牛肉乾,,Literally means Dehydrated beef; Fixed penalty parking ticket,False
+phrase,Criminal terminology,sai taai ping dei,,洗太平地,,Literally means hose washing of public places; To disrupt a business of Triad Society or illegal gangs by regular patrolling or spot checking,False
+phrase,Criminal terminology,sai tau teng,,洗頭艇,,"Literally means Shampoo boat; Illegal high-speed ferry, a sea transportation tool crossing border without official immigration procedure",False
+phrase,Criminal terminology,san jau si,,身有屎,,Literally means Feces on the body; Skeleton in the closet,False
+phrase,Criminal terminology,si piu,,撕票,,To Kill the kidnappee,False
+phrase,Criminal terminology,sik sei maau,,食死貓,,Literally to eat a dead cat; To be a Scapegoat,False
+phrase,Criminal terminology,tiu fui,,跳灰,,"Literally means Jumping ash (Running powder); Drug trafficking, especially for Heroin",False
+phrase,Criminal terminology,tong sei ngau,,劏死牛,,"Literally to butcher a dead cow; To rob somebody in quiet place, especially in night time",False
+phrase,Criminal terminology,zap si,,執屍,,Literally means collect or take a corpse; To rape drunk or unconscious female,False
+phrase,Criminal terminology,zau fan,,走粉,,"Literally means Jumping ash (Running powder); Drug trafficking, especially for Heroin",False
+phrase,Criminal terminology,zek zau,,隻揪,,One-against-one fight,False
+phrase,Criminal terminology,zoek cou,,著草,,Literally to wear grass; To flee,False
+phrase,Criminal terminology,zuk wong goek gai,,捉黃腳雞,,Literally to catch yellow-foot chicken; Badger game,False
+phrase,Department,caai gun,,差館,,Police station,False
+phrase,Department,lau gei,,柳記,,Hong Kong Correctional Services Department (CSD),False
+phrase,Department,lou lim,,老廉,,"Etymology: 老 (""meaningless prefix"") + 廉 (廉潔 means incorruptible); ICAC",False
+phrase,Department,o gei,,O記,,Organised Crime and Triad Bureau (OCTB) of Hong Kong Police Force,False
+phrase,Electricity,lou syu mei,,老鼠尾,,Literally means Mouse/Rat tail; RCBO,False
+phrase,Electricity,seoi sin,,水線,,Literally means Water-wire; Earth Wire,False
+phrase,Electricity,seoi zung,,水總,,RCCB,False
+phrase,Electricity,tar biu,,tar表,,Multimeter,False
+phrase,Electricity,tiu zai,,跳掣,,Literally to jump the switch; To trip circuit breaker,False
+phrase,English Idioms,coeng geng,,搶鏡,,Literally to rob of Mirror; Steal the show,False
+phrase,English Idioms,ding nei m seon,,頂你唔順,,You make me sick!,False
+phrase,English Idioms,sai sap zo go tau,,洗濕左個頭,,"Literally means that hair is already wet, might as well wash it; What is done cannot be undone. (already committed; already involved; too late to back out; have to see it through)",False
+phrase,Foods and Drinks,baak tong,,白湯,,Literally means White soup; Chowder or Cream of mushroom soup,False
+phrase,Foods and Drinks,daan daat,,蛋撻,,Egg tart,False
+phrase,Foods and Drinks,gai daan zai,,雞蛋仔,,Literally means Chicken egg-son; Egg waffle,False
+phrase,Foods and Drinks,ho laan seoi,,荷蘭水,,Literally means Dutch water; Carbonated water or Soft drink,False
+phrase,Foods and Drinks,hung tong,,紅湯,,Literally means Red soup; Borscht,False
+phrase,Foods and Drinks,min zi,,免治,,"Sound like the English word ""Mince""; Mincing",False
+phrase,Foods and Drinks,ngai gwaa,,矮瓜,,Literally means Short melon; Aubergine (Eggplant),False
+phrase,Foods and Drinks,waan jyu,,鯇魚,,Grass carp,False
+phrase,Football,caap faa,,插花,,Literally means flower bouquet; Step over,False
+phrase,Football,caau gaai laan,,炒芥蘭,,Literally to stir-fry Chinese broccoli; A football player get injured thigh tendons or muscles by crashing someone's kneel leg or hard body,False
+phrase,Football,dei biu zin,,地標戰,,"Literally to landmark-battle, but 地標 sounds like the English/French word ""debut""; Debut",False
+phrase,Football,fu tim,,夫添,,"Sound like English word, ""full team""; Football squad without any injury, sickness or suspension",False
+phrase,Football,jin haak,,宴客,,Literally to hold a banquet; To miss a penalty,False
+phrase,Football,lai hang gung si,,例行公事,,Literally means routine job; Dead rubber,False
+phrase,Football,ngau baa bui,,歐霸盃,,UEFA Europa League,False
+phrase,Football,ngau lyun,,歐聯,,UEFA Champions League,False
+phrase,Football,sik bo beng,,食波餅,,Literally to eat ball biscuit; Someone's head or face gets hit by a football,False
+phrase,Football,tung haang keoi,,通坑渠,,Literally to unblock sewer pipes or clogged wastewater drain; Nutmeg,False
+phrase,Football,wo lei,,窩利,,"Sounds like the English word ""volley""; Volley",False
+phrase,Foul language,ham gaa caan,,冚家剷,,Literally means Whole family die; Common curse phrase for someone's whole family being death and bulldozed,False
+phrase,Foul language,jaak ziu,,吔蕉,,"Literally to eat banana; a vulgar way of expressing hostility and strong irritation, ""Piss off!""",False
+phrase,Foul language,saap ngong,,霎戇,,"(of a decision) Stupid, Ignorant or Ridiculous",False
+phrase,Gun,kuk cek,,曲尺,,Literally means Crooker-ruler; Semi-automatic pistol,False
+phrase,Gun,zo leon,,左輪,,Literally means left-wheel-gun; Revolver,False
+phrase,Love and Sex,ce kei,,扯旗,,Literally to raise a flag; Penile erection,False
+phrase,Love and Sex,ceoi siu,,吹簫,,Literally to play Xiao; Women performing Oral sex for men,False
+phrase,Love and Sex,daa fei gei,,打飛機,,Literally to Hit the aeroplane; Male Masturbation,False
+phrase,Love and Sex,din dang daam,,電燈膽,,Literally means Light bulb; Third wheel,False
+phrase,Love and Sex,m gan,,M巾,,"M for Menstrual, 巾 means towel in Chinese; Sanitary Napkin",False
+phrase,Love and Sex,maai fei fat,,賣飛佛,,"Sound like English words ""My favorite""; My favorite, this slang originated from Ron Ng's Hong Kong English",False
+phrase,Love and Sex,sei zai,,四仔,,"Literally means ""Four"" son; Pornographic films",False
+phrase,Love and Sex,sik to haai faan,,食拖鞋飯,,Literally to eat soft rice (to eat slippers' rice); To sponge off women,False
+phrase,Love and Sex,sik yun faan,,食軟飯,,Literally to eat soft rice (to eat slippers' rice); To sponge off women,False
+phrase,Love and Sex,taat zoek,,撻著,,Literally to ignite a fire; two people fall in love and become a couple,False
+phrase,Love and Sex,tau sik,,偷食,,"Literally to sneak food; Adultery, Infidelity or Two-time",False
+phrase,Medical,baau gong,,爆江,,Literally to rupture a river / crock; Bleeding,False
+phrase,Medical,daap kiu,,搭橋,,Literally to build a bridge; Coronary Artery Bypass Grafting (CABG),False
+phrase,Medical,hei gai pei,,起雞皮,,Literally to raise chicken skin; To get Goose bumps,False
+phrase,Medical,siu ji fo,,小兒科,,Literally means Pediatric; 1). - Pediatric. 2.) - Child's Play or Insignificant things,False
+phrase,Medical,tung bo zai,,通波仔,,Literally to make something smooth by a small ball; Angioplasty,False
+phrase,Medical,wong luk ji saang,,黃綠醫生 / 黃六醫生,,Literally means Yellow green doctor / Yellow six doctor; Quackery,False
+phrase,Non-football,caai roller,,踩roller,,踩 means step on; Playing roller skating,False
+phrase,Non-football,daat q,,撻Q,,Q sound like cue; To miss one's (snooker) cue,False
+phrase,Non-football,duk bo,,篤波,,Playing snooker,False
+phrase,Non-football,jap zeon,,入樽,,Literally to put something into bottle; Slam dunk of basketball,False
+phrase,Non-football,luk ling,,轆齡,,"轆 / 碌 means wheel (as noun) or roll (as verb), 拎 / 齡 sounds like English word lane; Playing bowling (in Chinese, 保""齡""球)",False
+phrase,Non-football,wong cou fe laam pink,,黃-草-啡-藍-Pink,,Literally means Yellow - Grass - Coffee / Brown - Blue - Pink; Slang of snooker colour ball except Black,False
+phrase,Other,be ling,,啤令,,"Sound like the English words ""Bearing""; Bearing",False
+phrase,Other,jin so,,燕梳,,"Literally means Swallow-Comb, sound like the English word ""Insure""; Insurance",False
+phrase,Other,si baa naa,,士巴拿,,"Sounds like the English words ""Spanner""; Wrench or Shifter",False
+phrase,Others,baan haai,,扮蟹,,To behave pretentiously,False
+phrase,Others,ceoi seoi,,吹水,,Literally to blow water; Chit-chatting,False
+phrase,Others,chyun zeoi,,串嘴,,To behave arrogantly and rudely,False
+phrase,Others,cim seoi,,潛水,,Literally means underwater diving; to disappear or Lurker,False
+phrase,Others,daa zim,,打尖,,Cutting in line,False
+phrase,Others,dik hon,,滴汗,,Literally to sweat; to feel speechless and reticent,False
+phrase,Others,dit ngaan geng,,跌眼鏡,,"Literally to have an O-shaped mouth (to drop glasses); To feel astonished and stunned, meaning 'oh my gosh'. The jaw drops and the shape of the mouth resembles the English letter, O",False
+phrase,Others,diu jyu,,釣魚,,Literally to fish; To nod off / drift off / doze off,False
+phrase,Others,dou baak tau pin,,賭白頭片,,To bet money on something or to gamble while not having enough money to pay if one loses,False
+phrase,Others,fei lou,,肥佬,,"Literally means ""fat man"" but sounds like English word ""fail""; Failing an examination",False
+phrase,Others,fong fei gei,,放飛機,,Literally to fly an aeroplane; To fail to turn up on a date / To stand somebody up,False
+phrase,Others,fu luk,,負碌,,"Sounds like the English word ""Fluke""; meaning something that is unlikely or surprising and only happens because of luck",False
+phrase,Others,gaau cyun go party,,搞串個party,,Party pooping,False
+phrase,Others,gei daai,,幾歹,,"As adverb, Whatever",False
+phrase,Others,gwai cuk,,龜速,,Literally means turtle speed; extremely slow speed,False
+phrase,Others,hou daai,,好歹,,"As adverb, Whatever",False
+phrase,Others,jyut ging post,,月經Post,,,False
+phrase,Others,jyut ging tip,,月經帖,,,False
+phrase,Others,laang hei gwan si,,冷氣軍師,,Literally means an adviser inside an air-conditioning room; Armchair expert or Keyboard warrior,False
+phrase,Others,lau daa,,摟打,,To make someone angry and provoke someone for fighting,False
+phrase,Others,liu gaau daa,,撩交打,,To make someone angry and provoke someone for fighting,False
+phrase,Others,mou laa laa,,無啦啦,,"As adverb, Out of the blue (Suddenly and unexpectedly)",False
+phrase,Others,o zeoi,,O嘴,,"Literally to have an O-shaped mouth (to drop glasses); To feel astonished and stunned, meaning 'oh my gosh'. The jaw drops and the shape of the mouth resembles the English letter, O",False
+phrase,Others,or si fat han,,"屎忽痕, Literally means buttocks itch.",,"As adverb, Out of the blue (Suddenly and unexpectedly)",False
+phrase,Others,pan faan,,噴飯,,"Literally meaning is ""spitting rice""; something makes you burst into laughter",False
+phrase,Others,pou tau,,蒲頭,,To appear,False
+phrase,Others,put laang seoi,,潑冷水,,Literally to pour cold water on somebody or something; To dampen somebody's enthusiasm / to put a damper on something / discourage someone from doing something,False
+phrase,Others,sap buk,,十卜,,"Sounds like the English word ""Support""; To cheer someone up",False
+phrase,Others,sat ging mou san,,失驚無神,,"As adverb, Out of the blue (Suddenly and unexpectedly)",False
+phrase,Others,sing ne,,升呢,,To gain a higher level in video game or Promotion,False
+phrase,Others,sou zau si,,蘇州屎,,Literally means Suzhou feaces; Hot potato,False
+phrase,Others,tip si,,貼士,,"Sound like the English word ""Tips""; 1). - Hints (Tips). 2). - Gratuity (Tip)",False
+phrase,Others,wat gei,,屈機,,Literally to break a machine into two pieces; an adjective describing someone who is tremendous and excellent,False
+phrase,Others,zau sou,,走數,,Literally means to run away from one's debts; to chicken out or failing to keep promise,False
+phrase,Steak cooking levels,cat sing suk,,七成熟,,Literally means 70% cooked; Medium well,False
+phrase,Steak cooking levels,cyun suk,,全熟,,Literally means fully cooked; Well done,False
+phrase,Steak cooking levels,jat sing suk,,一成熟,,Literally means 10% cooked; Rare,False
+phrase,Steak cooking levels,ng sing suk,,五成熟,,Literally means 50% cooked; Medium,False
+phrase,Steak cooking levels,saam sing suk,,三成熟,,Literally means 30% cooked; Medium rare,False
+phrase,Unit of Money,cing haai,,青蟹,,Literally means Green crab; Hong Kong ten-dollar note (issued in 1982-85 by HSBC),False
+phrase,Unit of Money,daai ngau,,大牛,,Literally means Big Buffalo; Hong Kong five hundred-dollar note,False
+phrase,Unit of Money,faa haai,,花蟹,,Literally means Flower crab; Hong Kong ten-dollar note (issued in 2002-2005 by Hong Kong government),False
+phrase,Unit of Money,gaau haai,,膠蟹,,"Literally means Plastic crab; Hong Kong ten-dollar note (issued in 2007-2018 by Hong Kong government, made of polymer)",False
+phrase,Unit of Money,gam ngau,,金牛,,Literally means Golden Cow; Hong Kong one thousand-dollar note,False
+phrase,Unit of Money,hou zi,,毫子,,10 Cents,False
+phrase,Unit of Money,hung saam jyu,,紅衫魚,,Literally means Red clothes fish (Nemipterus virgatus); Hong Kong one hundred-dollar note (red colour),False
+phrase,Unit of Money,or pun,,盤,,"Literally means Skin, Granular, Basin or sink-shaped respectively; 10,000 Dollars",False
+phrase,Vehicle,bo soeng,,波箱,,Literally means Wave-Box; Gear Box,False
+phrase,Vehicle,ce paai,,車牌,,Literally means Vehicle License; 1.) - Vehicle registration plate. 2.) - Driver's license,False
+phrase,Vehicle,din daan ce,,電單車,,Literally means Electric bike - Motorcycle,False
+phrase,Vehicle,gik lik zi,,極力子,,Sound like the English word Clutch; Clutch,False
+phrase,Vehicle,gwan bo,,棍波,,Literally means Stick-Gear Box; Manual transmission,False
+phrase,Vehicle,zi dung bo,,自動波,,Literally means Automation-Gear Box; Automatic Transmission,False
 phrase,adj,ho chi,hou chi,好似,好像,seem like,False
 phrase,adj,hoi sum,,開心,开心,happy,False
 phrase,adj,hou gui,,好攰,很累,tired,False
@@ -70,6 +241,48 @@ phrase,question,gei do,,幾多,多少,how many,False
 phrase,question,gei si,,幾時,什么时候,when,False
 phrase,question,mat ye,,乜嘢,什么,what,False
 phrase,question,meh si,mehsi,咩事,什么事,what happened,False
+phrase,slang,7 head,,,,calling someone extremely foolish,True
+phrase,slang,add friend,,,,a playful way of saying someone is flirting online,True
+phrase,slang,baan ju sik lo fu,,扮豬食老虎,,manipulate someone into a false sense of security,False
+phrase,slang,bo chap,,,,"a carefree, ""I don't care"" attitude",True
+phrase,slang,cha siu,,,,being roasted or embarrassed publicly,True
+phrase,slang,daai din,,大癲,,very crazy/wild; go-to reaction phrase for shocking or unbelievable news,False
+phrase,slang,daai luk mo,,戴綠帽,,symbolizes that your significant other is cheating on you,False
+phrase,slang,dai sei,,,,a situation that feels completely doomed,True
+phrase,slang,dak sei,,,,used when someone's bad outcome feels deserved,True
+phrase,slang,face black,,黑面,,someone clearly looks angry or annoyed,False
+phrase,slang,fai seui,,,,Taiwanese-style sugary drinks that are high in calories,True
+phrase,slang,fong seem,,放閃,,blinding radiance emitted by lovebirds displaying affection,False
+phrase,slang,fut hai,,佛系,,takes a nonchalant / carefree attitude towards life,False
+phrase,slang,gai tung aap gong,,雞同鴨講,,people unable to properly communicate with each other,False
+phrase,slang,gum geen fun,,,,"relationship advice that's always ""you should break up""",True
+phrase,slang,hak hei,,,,a feeling of bad luck or negative energy,True
+phrase,slang,ho seh,,,,expresses sympathy for someone in a bad situation,True
+phrase,slang,jah ba si,,,,someone who's had too many drinks and is about to be sick,True
+phrase,slang,jee fei,,自肥,,using sneaky means to benefit yourself / line your own pockets,False
+phrase,slang,juet juet zee,,絕絕子,,"the absolute best, or ironically, completely awful",False
+phrase,slang,juk chung,,,,"get yourself into trouble, causing unnecessary difficulties",True
+phrase,slang,keh ngau wun ma,,騎牛搵馬,,working one job while looking for a better one,False
+phrase,slang,laap flag,,,,"being vocal about plans/goals, but the result ends up the complete opposite",True
+phrase,slang,lai yeh,,,,gotten themselves into some sort of spectacular disaster,True
+phrase,slang,lam chai,,,,a boyfriend who is overly clingy,True
+phrase,slang,ling zyun,,0尊,,zero respect; used to call out anyone disrupting your peace,False
+phrase,slang,lok gau si,,,,"raining heavily (like ""raining cats and dogs"")",True
+phrase,slang,mo sor wai,,無所謂,无所谓,I don't mind / don't care either way,False
+phrase,slang,mou lei tau,,無厘頭,,"absurd or nonsense humor, common in Cantonese comedy",False
+phrase,slang,ngaam aa,,啱啊,,that's right — said with a condescending twist to subtly show disapproval while superficially agreeing,False
+phrase,slang,sai jat,,世一,,world's number one; highest possible praise for something top-tier (short for 世界第一),False
+phrase,slang,sau bing,,收兵,,accumulating male friends to friend-zone and use them,False
+phrase,slang,seew hok gai,,小學雞,,acting immature and foolish,False
+phrase,slang,siu hak,,,,a small-time troublemaker who likes causing drama,True
+phrase,slang,sou dei aa sum,so di ah sum,掃地啊嬸,,the cleaning lady who drops by your office,False
+phrase,slang,sze lei,,,,acting overly dramatic or intense,True
+phrase,slang,tong ping,,躺平,躺平,"lie flat; doing as little as possible, opting out of the rat race",False
+phrase,slang,waai gwor yuen ting,,壞過婉婷,,very bad or very naughty,False
+phrase,slang,wui shui,,回水,,refund money to a customer,False
+phrase,slang,wun gut,,運桔/吉,,mess about and not help or contribute meaningfully at all,False
+phrase,slang,yau mo,,有冇搞錯,,"expresses disbelief, similar to ""Seriously?""",False
+phrase,slang,yeung gwor,,陽過,,contracted and recovered from Covid-19,False
 phrase,time,gam jat,,今日,今天,today,False
 phrase,time,kam jat,,琴日,昨天,yesterday,False
 phrase,time,ting jat,,聽日,明天,tomorrow,False
@@ -86,7 +299,7 @@ phrase,俚语,gg la,,GG啦,完蛋了,we’re done,False
 phrase,俚语,gum l jeng,,咁L正,超棒,very awesome,False
 phrase,俚语,hoi sem,,開sem,新學期開始,new semester start,False
 phrase,俚语,pok gai,,仆街,去死,vulgar insult,False
-phrase,俚语,sau pei,,收皮,结束,shut up,False
+phrase,俚语,sau pei,saau pei,收皮,结束,shut up,False
 phrase,俚语,yuen sem,,完sem,學期結束,end semester,False
 phrase,学校/日常,gg la,,完蛋啦,完蛋了,we're done for,False
 phrase,学校/日常,late drop,,退課,退課,drop a course,False
@@ -94,58 +307,45 @@ phrase,常用句,yuen loi,,原來,原来,turns out,False
 phrase,日常,zip liba,,摺liba,自习,study,False
 phrase,补充,gum jeng,,咁正,很棒,so good,False
 phrase,补充,hoi sum d,,開心啲,开心点,be happier,False
-token,,7tau,7tou,柒頭,,,False
-token,,aa,,AA,A錢,go dutch,True
-token,,b4,,之前,之前,,False
-token,,c9,,師奶,阿婆,,False
-token,,chau,,臭,,,False
-token,,cheng,,請,,,False
-token,,chill,,放鬆/舒服,放松/舒服,,False
-token,,chur到爆,,超級忙,超级忙,,False
-token,,cuz,,因為,因为,because,False
-token,,din,,癲,,,False
-token,,ding,,定係,還是,,False
-token,,ding,,頂,,,False
-token,,dou,,到/都,都,,False
-token,,dukham,,得閒,有空,free / have time,False
-token,,fan,,瞓,睡觉,sleep,False
-token,,flop,,失敗/表現差,搞砸/失败/表现差,,False
-token,,gao,,搞,,,False
-token,,gei,,幾,几,,False
-token,,har,,吓？,啥,,False
-token,,icic,,我明白了,我明白了,,False
-token,,jap,,jap,吃,,True
-token,,jhgg,,即係咁講,意思就是,,False
-token,,ks,,其實,其实,,False
-token,,lan,,躝,,,False
-token,,lei,,來,来,,False
-token,,lun,,撚（髒話）,,,False
-token,,mat,,乜,什么,what,False
-token,,mic,,咪,麦克风,microphone,False
-token,,mnyy,,must need 要有,,must need,False
-token,,ofc,,當然,當然,of course,False
-token,,ootd,,今日穿搭,今日穿搭,outfit of the day,False
-token,,piu,,漂,漂染,,False
-token,,pua,,情緒操控,情绪操控,emotional manipulation,False
-token,,shiba,,西巴（韩语骂人的词语）,西巴（韩语骂人的词语）,,False
-token,,shrg,,想,想,,False
-token,,tai,,太,太,,False
-token,,teng,,聽,听,listen,False
-token,,tim,,添,还,also,False
-token,,yam,,飲,喝,drink,False
-token,,yum,,好食,好吃,yummy,False
-token,,zau,,走,走,leave,False
-token,,ze,,啫,而已,only,False
-token,,zhongyiu,,仲要,还要,,False
-token,,zihai,,即係,就是,,False
-token,,zo,,做,做,do,False
-token,,入pool,,開始拍拖,开始谈恋爱,,False
-token,,冇mood,,冇mood,没心情/没情绪,,False
-token,,冇晒face,,冇晒菲士,没面子,,False
-token,,出pool,,脫單,脱单，找到对象,,False
-token,,摆pose,,摆pose,摆姿势,,False
-token,,蛋tart,,蛋挞,蛋挞,egg tart,False
-token,,車呔,,車呔,轮胎,tyre,False
+phrase,,can mm can,,can唔can,可不可以,,False
+phrase,,chuk gai,,出街,出门逛街,,False
+phrase,,da binlo,,打邊爐,吃火锅,,False
+phrase,,gen hai la,,梗系啦,当然啦,,False
+phrase,,hai gua,,係啩,是吧,,False
+phrase,,hai mai,hai mai gah,係咪,是不是,is it / isn't it (yes-no question particle),False
+phrase,,ho charm,,好charm,好有个人魅力,,False
+phrase,,ho ging,,好勁,好厉害,,False
+phrase,,ho hurng,,好香,,,False
+phrase,,ho leng,,好靚,好漂亮,,False
+phrase,,ho mm horyi,,可唔可以,可不可以,,False
+phrase,,ho qq,,好得意,好可以,so cute,False
+phrase,,lan hoi,,躝開,滚开,fuck off,False
+phrase,,lo best,老best,老best,老朋友/最好的朋友,,False
+phrase,,marn marn,,慢慢,慢慢来,,False
+phrase,,mm gup,,唔急,不急,,False
+phrase,,mm sik,,唔識,不会/不认识,dun understand / dun know,False
+phrase,,mm yat ding,,唔一定,不一定,,False
+phrase,,molly yau,,冇理由,没理由,,False
+phrase,,polly shum,,玻璃心,玻璃心,,False
+phrase,,sik farn,,食飯,吃饭,,False
+phrase,,siu din,,少癲,有点离谱,a little crazy/off; go-to reaction phrase for shocking or unbelievable news,False
+phrase,,siu siu,,少少,一点点,a little,False
+phrase,,siu sum,,小心,小心,,False
+phrase,,sun fu sai,,辛苦曬,,,False
+phrase,,tse tse,,謝謝,谢谢,thanks,False
+phrase,,wui mm wui,,會唔會,会不会,,False
+phrase,,yi wai,yiwei,以為,以为,,False
+phrase,,ying goi,,應該,,,False
+token,Football,bo,,波,,"Literally means wave, but sounds like the English word ""ball""; Ball or Football",False
+token,Foul language,diu,,屌 / 𨳒,,Fuck,False
+token,Love and Sex,gai,,雞,,Literally means Chicken; Female sex worker,False
+token,Love and Sex,ngaap,,鴨,,Literally means Duck; Male prostitution or Gigolo,False
+token,Unit of Money,cou,,草,,Literally means Grass; 10 Dollars,False
+token,Unit of Money,gau,,嚿,,Literally means Piece; 100 Dollars,False
+token,Unit of Money,kau,,球,,"Literally means Ball; 1,000,000 Dollars",False
+token,Unit of Money,lap,,粒,,"Literally means Skin, Granular, Basin or sink-shaped respectively; 10,000 Dollars",False
+token,Unit of Money,man,,蚊,,Literally means Mosquito; Dollar,False
+token,Unit of Money,pei,,皮,,"Literally means Skin, Granular, Basin or sink-shaped respectively; 10,000 Dollars",False
 token,activity,facial,,做facial,做美容,facial treatment,False
 token,activity,shopping,,去shopping,去购物,shopping,False
 token,adj,arm,,啱,對,correct,False
@@ -205,7 +405,7 @@ token,phrase,收band,,收band,结束,end/finish,False
 token,phrase,開band,,開band,开始,start (music/action),False
 token,profanity,diu,,diu,操,,True
 token,profanity,l,,Leng,,,True
-token,profanity,sldpk,,笑L到坡街,我操笑死我了,,False
+token,profanity,sldpk,,笑L到坡街,我操笑死我了,"(textspeak, vulgar/euphemistic) laughing so hard you could trip and fall on the street; several joking character renderings exist (e.g. 少年的拼勁, 笑撚到仆街, 成龍打保錡) since it's a phonetic/backronym pun, not a fixed written word",False
 token,pronoun,keoi,kui,佢,他/她,he/she,False
 token,pronoun,nei,,你,你,you,False
 token,pronoun,ngo,,我,我,I/me,False
@@ -214,11 +414,22 @@ token,shortform,pro,,pro,专业,professional,True
 token,shortform,quali,,quali,资格,qualification,True
 token,shortform,u,入u,入U,上大学,university,False
 token,shortform,un,,un,明白,understand,True
+token,slang,1999,,一舊舊,,code-mixed number slang used to express slurred/exaggerated speech,False
+token,slang,6uo,,,,internet slang mixing numbers and English letters,True
 token,slang,ceoi,,脆,脆（Threads的香港花名）,Threads (the social media app; HK nickname),False
 token,slang,cls,,痴撚線,疯了,crazy,False
 token,slang,diu,,屌,操,fuck,False
+token,slang,fuk,,伏,,something of questionable or misleading quality,False
+token,slang,gg,,,,"""game over"", used when something goes terribly wrong",True
 token,slang,hea,,hea,混,chill lazily,True
+token,slang,kam,,尷,,"awkward; cringe, weird, gives you the ick (short for 尷尬)",False
+token,slang,keng,,,,telling exaggerated or unbelievable stories,True
+token,slang,lam,,,,describes someone extremely clingy in relationships,True
+token,slang,lau meng,,留名,留名,bookmark / mark my presence (in a thread/post),False
 token,slang,on9,,戇鳩,傻瓜,idiot,False
+token,slang,pk,,,,a rude or troublesome person who annoys others,True
+token,slang,sei lo,,死佬,死鬼老公,(affectionate/mocking) husband,False
+token,slang,siumai,,燒賣,,a silly or goofy person (named after the dim sum dish),False
 token,state,cheap,,cheap cheap 地,很便宜/低质,cheap,False
 token,state,high,,high high 地,很兴奋,excited,False
 token,time,jau,,就,就,then,False
@@ -242,7 +453,7 @@ token,work,o.t.,,開O.T.,加班,overtime,False
 token,俚语,chur到盡,,chur到盡,拼尽全力做某事,to exploit something until depletion,False
 token,俚语,hea,,係咁意,隨便,do it half-heartedly,False
 token,俚语,jm9,,做乜,干嘛,what the hell,False
-token,俚语,mk,,mk妹,潮人,trendy girl,False
+token,俚语,mk,,mk妹,潮人,trendy girl (also used adjectivally for a tacky/try-hard-trendy Mong Kok-style look),False
 token,俚语,mud9,,乜9,什么鬼,wtf,False
 token,俚语,m巾,,姨媽巾,卫生巾,sanitary napkin,False
 token,俚语,shiba,,西八,西八,damn it,False
@@ -277,3 +488,55 @@ token,补充,mon,,屏幕,屏幕,screen,False
 token,语气词,gua,,掛,吧,huh,False
 token,语气词,gua,,啩,,,False
 token,语气词,har,,吓,啊？,huh,False
+token,,7tau,7tou,柒頭,,,False
+token,,aa,,AA,A錢,go dutch,True
+token,,b4,,之前,之前,,False
+token,,c9,,師奶,阿婆,,False
+token,,chau,,臭,,,False
+token,,cheng,,請,,,False
+token,,chill,,放鬆/舒服,放松/舒服,,False
+token,,chur到爆,,超級忙,超级忙,,False
+token,,cuz,,因為,因为,because,False
+token,,din,,癲,,,False
+token,,ding,,定係,還是,,False
+token,,ding,,頂,靠,damn / f*ck (mild profanity/exclamation of frustration),False
+token,,dou,,到/都,都,,False
+token,,dukham,,得閒,有空,free / have time,False
+token,,fan,,瞓,睡觉,sleep,False
+token,,flop,,失敗/表現差,搞砸/失败/表现差,,False
+token,,gao,,搞,,,False
+token,,gei,,幾,几,,False
+token,,har,,吓？,啥,,False
+token,,icic,,我明白了,我明白了,,False
+token,,jap,,jap,吃,,True
+token,,jhgg,,即係咁講,意思就是,,False
+token,,ks,,其實,其实,,False
+token,,lan,,躝,,,False
+token,,lei,,來,来,,False
+token,,lun,,撚（髒話）,,,False
+token,,mat,,乜,什么,what,False
+token,,mic,,咪,麦克风,microphone,False
+token,,mnyy,,must need 要有,,must need,False
+token,,ofc,,當然,當然,of course,False
+token,,ootd,,今日穿搭,今日穿搭,outfit of the day,False
+token,,piu,,漂,漂染,,False
+token,,pua,,情緒操控,情绪操控,emotional manipulation,False
+token,,shiba,,西巴（韩语骂人的词语）,西巴（韩语骂人的词语）,,False
+token,,shrg,,想,想,,False
+token,,tai,,太,太,,False
+token,,teng,,聽,听,listen,False
+token,,tim,,添,还,also,False
+token,,yam,,飲,喝,drink,False
+token,,yum,,好食,好吃,yummy,False
+token,,zau,,走,走,leave,False
+token,,ze,,啫,而已,only,False
+token,,zhongyiu,,仲要,还要,,False
+token,,zihai,jac hai,即係,就是,so / that means / in other words,False
+token,,zo,,做,做,do,False
+token,,入pool,,開始拍拖,开始谈恋爱,,False
+token,,冇mood,,冇mood,没心情/没情绪,,False
+token,,冇晒face,,冇晒菲士,没面子,,False
+token,,出pool,,脫單,脱单，找到对象,,False
+token,,摆pose,,摆pose,摆姿势,,False
+token,,蛋tart,,蛋挞,蛋挞,egg tart,False
+token,,車呔,,車呔,轮胎,tyre,False

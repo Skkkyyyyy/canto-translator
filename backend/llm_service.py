@@ -5,14 +5,26 @@ import os
 
 load_dotenv()
 
+_cache: dict[str, str] = {}
+
 def llm(text:str):
+    cache_key = text.strip().lower()
+    if cache_key in _cache:
+        return _cache[cache_key]
     messages = [
     {
         "role": "system",
         "content": (
 
     "You are a Cantonese translation assistant specializing in informal written Cantonese (often romanized or mixed with Chinese characters). "
-    
+
+    "How to weigh the retrieved glossary matches:\n"
+    "- token_matches and sentence_matches are candidate interpretations retrieved by string matching, not guaranteed correct — use judgment, don't just concatenate them\n"
+    "- match_type \"direct\" (score 100) means the input exactly matches a known spelling; \"fuzzy\" means an approximate match — treat fuzzy matches, especially at lower scores, as less certain\n"
+    "- If a sentence_match has a high score, it means this input closely matches a previously verified full sentence — prefer its given Cantonese/Mandarin translation as a whole over reconstructing the sentence from individual token_matches\n"
+    "- token_matches can overlap: a multi-word phrase match (e.g. \"duk mm duk\" -> 得唔得) and a shorter single-word match contained within it (e.g. \"duk\" -> 戳/poke) may both be retrieved for the same input. When this happens, the longer phrase-level match reflects the actual compound meaning and should win — do not fall back to the shorter word's literal meaning\n"
+    "- Multiple matches that map to the same Cantonese/Mandarin meaning (different spellings of the same word) reinforce each other and increase confidence in that reading, they are not conflicting alternatives\n\n"
+
     "Your translation process must follow these steps strictly:\n\n"
     "Step 1 - Cantonese breakdown:\n"
     "Break the input into individual words or phrases. For each unit, provide:\n"
@@ -60,10 +72,10 @@ def llm(text:str):
         api_key=os.getenv("OPENROUTER_API_KEY"),
     )
     completion = client.chat.completions.create(
-        model="qwen/qwen3.7-plus",
+        model="qwen/qwen3.6-flash",
         messages=messages,
         temperature=0.2,
-        max_tokens=1024,
+        max_tokens=400,
         top_p=0.9,
         stream=True,
     )
@@ -73,6 +85,8 @@ def llm(text:str):
         if chunk.choices[0].delta.content:
             print(chunk.choices[0].delta.content, end="")
             results += chunk.choices[0].delta.content
-    return results 
+
+    _cache[cache_key] = results
+    return results
 
 
