@@ -120,6 +120,7 @@ import ContributeModal from './ContributeModal.vue'
 import type { ContributionKind } from '../api/types'
 import { SUPPORTED_LOCALES, setLocale } from '../i18n'
 import type { LocaleCode } from '../i18n'
+import { API_BASE } from '../api/client'
 
 const { t, locale } = useI18n()
 
@@ -160,7 +161,7 @@ const sendMessage = async () => {
     if (!message.value.trim() || loading.value) return
     loading.value = true
     try {
-        const response = await fetch('http://127.0.0.1:8000/chat', {
+        const response = await fetch(`${API_BASE}/chat`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
