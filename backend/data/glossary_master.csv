@@ -281,7 +281,7 @@ phrase,slang,tong ping,,躺平,躺平,"lie flat; doing as little as possible, op
 phrase,slang,waai gwor yuen ting,,壞過婉婷,,very bad or very naughty,False
 phrase,slang,wui shui,,回水,,refund money to a customer,False
 phrase,slang,wun gut,,運桔/吉,,mess about and not help or contribute meaningfully at all,False
-phrase,slang,yau mo,,有冇搞錯,,"expresses disbelief, similar to ""Seriously?""",False
+phrase,slang,yau mo,,有冇,,"have or have not",False
 phrase,slang,yeung gwor,,陽過,,contracted and recovered from Covid-19,False
 phrase,time,gam jat,,今日,今天,today,False
 phrase,time,kam jat,,琴日,昨天,yesterday,False
@@ -455,6 +455,7 @@ token,俚语,hea,,係咁意,隨便,do it half-heartedly,False
 token,俚语,jm9,,做乜,干嘛,what the hell,False
 token,俚语,mk,,mk妹,潮人,trendy girl (also used adjectivally for a tacky/try-hard-trendy Mong Kok-style look),False
 token,俚语,mud9,,乜9,什么鬼,wtf,False
+token,俚语,mud,,乜,什么,what,False
 token,俚语,m巾,,姨媽巾,卫生巾,sanitary napkin,False
 token,俚语,shiba,,西八,西八,damn it,False
 token,俚语,sls,,笑撚死,笑死,lol,False

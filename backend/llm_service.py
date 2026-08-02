@@ -24,7 +24,7 @@ def _safe_log(**kwargs):
     except Exception as e:
         print(f"[log_translation failed: {e}]")
 
-def llm(text: str, use_rag: bool = True, context=None, verbose: bool = True, model: str = "moonshotai/kimi-k3", max_tokens: int = 1500):
+def llm(text: str, use_rag: bool = True, context=None, verbose: bool = True, model: str = "moonshotai/kimi-k3", max_tokens: int = 3000):
     """context 不为 None 时直接用它当检索结果，绕过 rag()。
 
     只给 eval_translation.py 做多组对照用（旧检索 / 新检索 / 不检索），
@@ -116,7 +116,7 @@ def llm(text: str, use_rag: bool = True, context=None, verbose: bool = True, mod
     }
     ]
 
-    HARD_DEADLINE_SECONDS = 45
+    HARD_DEADLINE_SECONDS = 90
 
     results = ""
     for attempt in range(2):
