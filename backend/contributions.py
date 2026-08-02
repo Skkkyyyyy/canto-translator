@@ -101,7 +101,7 @@ def create_contribution(payload: ContributionIn):
                 id, kind, intent, token, cantonese, mandarin, english, function,
                 example, note, contributor, source_text, source_output,
                 status, created_at
-            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,'pending',?)
+            ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,'pending',%s)
             """,
             (
                 row_id,

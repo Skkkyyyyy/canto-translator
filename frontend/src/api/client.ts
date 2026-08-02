@@ -1,4 +1,4 @@
-export const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://127.0.0.1:8000'
+export const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://127.0.0.1:8000/api'
 
 /** When true, every call is served by src/api/mock.ts and nothing hits the network. */
 export const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true'

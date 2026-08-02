@@ -8,7 +8,7 @@ from db import init_db
 app = FastAPI()
 
 init_db()
-app.include_router(contributions_router)
+app.include_router(contributions_router, prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,7 +23,7 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     text: str 
 
-@app.post("/chat")
+@app.post("/api/chat")
 def chat(request: ChatRequest):
     result = llm(request.text)
     print("result",result)

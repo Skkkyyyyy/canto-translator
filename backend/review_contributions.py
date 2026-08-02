@@ -22,7 +22,7 @@ def fetch(status: str | None):
     query = "SELECT * FROM contributions"
     params: tuple = ()
     if status:
-        query += " WHERE status = ?"
+        query += " WHERE status = %s"
         params = (status,)
     query += " ORDER BY created_at DESC"
     with connect() as conn:

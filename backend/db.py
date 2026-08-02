@@ -1,4 +1,4 @@
-"""SQLite store for user-submitted glossary entries.
+"""Postgres store for user-submitted glossary entries.
 
 Submissions live here, not in data/*.csv. The CSVs are the read-only glossary
 that rag.py scans on every request — an unreviewed entry landing there would
@@ -6,13 +6,17 @@ immediately affect live translations.
 """
 
 import os
-import sqlite3
 import uuid
 from contextlib import contextmanager
 from datetime import datetime, timezone
-from pathlib import Path
 
-DB_PATH = Path(os.environ["DB_PATH"]) if "DB_PATH" in os.environ else Path(__file__).parent / "data" / "contributions.db"
+import psycopg
+from dotenv import load_dotenv
+from psycopg.rows import dict_row
+
+load_dotenv()
+
+DATABASE_URL = os.environ["DATABASE_URL"]
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS contributions (
@@ -55,12 +59,13 @@ CREATE TABLE IF NOT EXISTS translations (
 CREATE INDEX IF NOT EXISTS idx_translations_created_at ON translations(created_at);
 """
 
+SCHEMA_STATEMENTS = [stmt.strip() for stmt in SCHEMA.split(";") if stmt.strip()]
+
 
 @contextmanager
 def connect():
     """One connection per call — FastAPI runs sync endpoints across threads."""
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
+    conn = psycopg.connect(DATABASE_URL, row_factory=dict_row)
     try:
         yield conn
         conn.commit()
@@ -69,9 +74,9 @@ def connect():
 
 
 def init_db():
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with connect() as conn:
-        conn.executescript(SCHEMA)
+        for statement in SCHEMA_STATEMENTS:
+            conn.execute(statement)
 
 
 def log_translation(
@@ -91,7 +96,7 @@ def log_translation(
             INSERT INTO translations (
                 id, input_text, use_rag, retrieved_context, reasoning,
                 result, model, latency_ms, cache_hit, error, created_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """,
             (
                 str(uuid.uuid4()),
