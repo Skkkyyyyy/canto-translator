@@ -19,7 +19,7 @@ CantoLens uses a **two-stage translation pipeline**:
    - **Direct match** — exact lookup for known tokens/phrases
    - **Fuzzy match** — approximate matching for close variants
 
-2. **LLM Translation** — Matched glossary context is injected into the prompt, then passed to `llama-3.3-70b-versatile` (via Groq) to produce the final translation across all three output languages.
+2. **LLM Translation** — Matched glossary context is injected into the prompt, then passed to `qwen/qwen3.7-plus` (via OpenRouter) to produce the final translation across all three output languages.
 
 This hybrid approach improves accuracy for Cantonese-specific slang and colloquial expressions that LLMs may not handle well on their own.
 
@@ -35,7 +35,7 @@ This hybrid approach improves accuracy for Cantonese-specific slang and colloqui
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### AI / NLP
-![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-orange?style=for-the-badge)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-Qwen3.7_Plus-orange?style=for-the-badge)
 ![thefuzz](https://img.shields.io/badge/thefuzz-Fuzzy_Matching-blueviolet?style=for-the-badge)
 ---
 
@@ -45,7 +45,7 @@ This hybrid approach improves accuracy for Cantonese-specific slang and colloqui
 
 - Python 3.9+
 - Node.js 18+
-- A Groq API key
+- An OpenRouter API key
 
 ### Backend Setup
 ```bash

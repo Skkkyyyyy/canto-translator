@@ -1,16 +1,58 @@
 from rag import rag
-from openai import OpenAI
+from openai import OpenAI, APITimeoutError, APIConnectionError
 from dotenv import load_dotenv
 import os
+import httpx
+import time
+
+from db import log_translation
 
 load_dotenv()
 
 _cache: dict[str, str] = {}
 
-def llm(text:str):
-    cache_key = text.strip().lower()
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    timeout=httpx.Timeout(30.0, connect=10.0),
+)
+
+def _safe_log(**kwargs):
+    """DB logging must never break a translation request."""
+    try:
+        log_translation(**kwargs)
+    except Exception as e:
+        print(f"[log_translation failed: {e}]")
+
+def llm(text: str, use_rag: bool = True, context=None, verbose: bool = True, model: str = "moonshotai/kimi-k3", max_tokens: int = 1500):
+    """context 不为 None 时直接用它当检索结果，绕过 rag()。
+
+    只给 eval_translation.py 做多组对照用（旧检索 / 新检索 / 不检索），
+    正常调用不要传，走 use_rag 就行。
+
+    model/max_tokens 用于模型对比测试（比如 scratch_compare_models.py），
+    正常调用不要传，走默认值就行。
+    """
+    overall_start = time.monotonic()
+
+    tag = "custom" if context is not None else str(use_rag)
+    cache_key = f"{model}:{tag}:{hash(str(context))}:{text.strip().lower()}"
     if cache_key in _cache:
-        return _cache[cache_key]
+        cached = _cache[cache_key]
+        _safe_log(
+            input_text=text,
+            use_rag=use_rag,
+            result=cached,
+            model=model,
+            cache_hit=True,
+        )
+        return cached
+
+    if context is not None:
+        retrieved = context
+    else:
+        retrieved = rag(text) if use_rag else {"token_matches": [], "sentence_matches": []}
+
     messages = [
     {
         "role": "system",
@@ -49,44 +91,101 @@ def llm(text:str):
     "- Translate only what is written, do not infer or extend meaning beyond the original input\n"
     "- Do not add context, assumptions, or extra interpretation\n"
     "- If something is ambiguous, provide the most literal translation only\n"
-    "- Be concise, do not explain your reasoning process\n"
+    "- Be concise\n"
     "- Do not say 'given the breakdown' or 'sticking strictly to'\n"
-    "- Output only the final translations, no meta-commentary\n"
+    "- After the REASONING section, output only the final translations, no meta-commentary\n\n"
+
+    "Output format — two sections, in this exact order:\n\n"
+    "REASONING:\n"
+    "[Walk through Step 1-3 here: syllable-by-syllable breakdown, including any phonological "
+    "associations you considered for ambiguous romanization, and why you picked the glossary "
+    "matches you did over alternatives. This section is the only place meta-commentary is allowed.]\n"
+    "---\n"
+    "粵語：[cantonese characters]\n"
+    "普通話：[mandarin]\n"
+    "English：[english]\n"
     )
     },
     {
         "role": "user",
         "content": (
             f"Original Cantonese text:\n{text}\n\n"
-            f"Retrieved glossary matches:\n{rag(text)}\n\n"
-            "Output format:\n"
-            "粵語：[cantonese characters]\n"
-            "普通話：[mandarin]\n"
-            "English：[english]\n"
+            f"Retrieved glossary matches:\n{retrieved}\n\n"
+            "Remember: REASONING section first, then '---', then only the three final translation lines.\n"
     )
     }
     ]
 
-    client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
-        api_key=os.getenv("OPENROUTER_API_KEY"),
-    )
-    completion = client.chat.completions.create(
-        model="qwen/qwen3.6-flash",
-        messages=messages,
-        temperature=0.2,
-        max_tokens=400,
-        top_p=0.9,
-        stream=True,
-    )
+    HARD_DEADLINE_SECONDS = 45
 
     results = ""
-    for chunk in completion:
-        if chunk.choices[0].delta.content:
-            print(chunk.choices[0].delta.content, end="")
-            results += chunk.choices[0].delta.content
+    for attempt in range(2):
+        try:
+            start = time.monotonic()
+            completion = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=0.2,
+                max_tokens=max_tokens,
+                top_p=0.9,
+                stream=True,
+                extra_body={"provider": {"sort": "latency"}},
+            )
+            for chunk in completion:
+                if time.monotonic() - start > HARD_DEADLINE_SECONDS:
+                    raise TimeoutError(f"stream exceeded {HARD_DEADLINE_SECONDS}s wall-clock deadline")
+                delta = chunk.choices[0].delta
+                native_reasoning = getattr(delta, "reasoning", None)
+                if native_reasoning and verbose:
+                    print(native_reasoning, end="")
+                if delta.content:
+                    results += delta.content
+            break
+        except (APITimeoutError, APIConnectionError, httpx.TimeoutException, TimeoutError) as e:
+            print(f"\n[timeout on attempt {attempt + 1}, retrying]" if attempt == 0 else f"\n[timeout, giving up: {e}]")
+            results = ""
+            if attempt == 1:
+                _safe_log(
+                    input_text=text,
+                    use_rag=use_rag,
+                    retrieved_context=str(retrieved),
+                    model=model,
+                    latency_ms=int((time.monotonic() - overall_start) * 1000),
+                    error=str(e),
+                )
+                raise
 
-    _cache[cache_key] = results
-    return results
+    if "---" in results:
+        reasoning, _, final = results.rpartition("---")
+        reasoning = reasoning.removeprefix("REASONING:").strip()
+        final = final.strip()
+    else:
+        # some models (e.g. kimi-k3) occasionally skip the "---" separator —
+        # fall back to splitting at the last "粵語：" line so raw reasoning
+        # never leaks into the cached/returned value.
+        cutoff = results.rfind("粵語")
+        if cutoff != -1:
+            reasoning = results[:cutoff].removeprefix("REASONING:").strip()
+            final = results[cutoff:].strip()
+        else:
+            reasoning = ""
+            final = results.strip()
+
+    if verbose and reasoning:
+        print("REASONING:\n" + reasoning + "\n")
+
+    _cache[cache_key] = final
+
+    _safe_log(
+        input_text=text,
+        use_rag=use_rag,
+        retrieved_context=str(retrieved),
+        reasoning=reasoning,
+        result=final,
+        model=model,
+        latency_ms=int((time.monotonic() - overall_start) * 1000),
+    )
+
+    return final
 
 

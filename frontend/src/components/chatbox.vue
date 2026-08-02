@@ -7,34 +7,46 @@
                         <path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
                     </svg>
                 </span>
-                <span class="brand-name">CantoLens</span>
+                <span class="brand-name">{{ t('brand.name') }}</span>
+            </div>
+            <div class="lang-dropdown">
+                <select
+                    class="lang-select"
+                    :value="locale"
+                    @change="setLocale(($event.target as HTMLSelectElement).value as LocaleCode)"
+                >
+                    <option v-for="loc in SUPPORTED_LOCALES" :key="loc.code" :value="loc.code">
+                        {{ loc.label }}
+                    </option>
+                </select>
+                <svg class="lang-caret" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </header>
 
         <main class="content">
-            <h1>Cantonese Translator</h1>
-            <p class="subtitle">Cantonese, Mandarin and English—side by side.</p>
+            <h1>{{ t('chatbox.title') }}</h1>
+            <p class="subtitle">{{ t('chatbox.subtitle') }}</p>
 
             <div class="input-card">
-                <span class="lang-pill">Cantonese (romanized)</span>
-
                 <textarea
                     v-model="message"
-                    placeholder="Type Cantonese in English letters, e.g. mm ho gum la..."
-                    rows="3"
+                    :placeholder="t('chatbox.placeholder')"
+                    rows="2"
                     maxlength="500"
                 ></textarea>
 
                 <div class="input-footer">
-                    <span class="char-count">{{ message.length }} / 500</span>
+                    <span class="char-count">{{ t('chatbox.charCount', { count: message.length }) }}</span>
                     <button class="translate-btn" :disabled="!message.trim() || loading" @click="sendMessage">
-                        {{ loading ? 'Translating...' : 'Translate' }}
+                        {{ loading ? t('chatbox.translating') : t('chatbox.translate') }}
                     </button>
                 </div>
             </div>
 
             <section class="results-section">
-                <h2>Translation results</h2>
+                <h2>{{ t('chatbox.resultsHeading') }}</h2>
                 <div class="results-card">
                     <div class="result-col" v-for="col in columns" :key="col.label">
                         <span class="col-label">{{ col.label }}</span>
@@ -44,14 +56,44 @@
                                 <rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/>
                                 <path d="M5 15V5a2 2 0 0 1 2-2h10" stroke="currentColor" stroke-width="1.8"/>
                             </svg>
-                            {{ col.copied ? 'Copied' : 'Copy' }}
+                            {{ col.copied ? t('chatbox.copied') : t('chatbox.copy') }}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contribute-row">
+                    <span class="contribute-text">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 20.25c-.184 0-.365-.045-.527-.13C7.94 18.24 3 14.76 3 9.75 3 7.13 5.13 5 7.75 5c1.44 0 2.8.66 3.75 1.77A4.98 4.98 0 0 1 16.25 5C18.87 5 21 7.13 21 9.75c0 5.01-4.94 8.49-8.473 10.37-.162.085-.343.13-.527.13Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                        </svg>
+                        {{ hasResults ? t('chatbox.contributePromptHasResults') : t('chatbox.contributePromptNoResults') }}
+                    </span>
+                    <div class="contribute-actions">
+                        <button class="contribute-btn" @click="openContribute('sentence')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            {{ t('chatbox.fixTranslation') }}
+                        </button>
+                        <button class="contribute-btn" @click="openContribute('token')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M2 6s2-1.5 5-1.5 5 1.5 5 1.5v13s-2-1.5-5-1.5-5 1.5-5 1.5V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M22 6s-2-1.5-5-1.5-5 1.5-5 1.5v13s2-1.5 5-1.5 5 1.5 5 1.5V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                            </svg>
+                            {{ t('chatbox.addWord') }}
                         </button>
                     </div>
                 </div>
             </section>
 
             <div class="examples">
-                <span class="examples-label">Try an example:</span>
+                <span class="examples-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l1.7 5.1L19 9l-5.3 1.9L12 16l-1.7-5.1L5 9l5.3-1.9L12 2Z"/>
+                        <path d="M19 15l.8 2.3L22 18l-2.2.7L19 21l-.8-2.3L16 18l2.2-.7L19 15Z"/>
+                    </svg>
+                    {{ t('chatbox.examplesLabel') }}
+                </span>
                 <button
                     v-for="ex in examples"
                     :key="ex"
@@ -60,16 +102,39 @@
                 >{{ ex }}</button>
             </div>
         </main>
+
+        <ContributeModal
+            :open="contributeOpen"
+            :initial-kind="contributeKind"
+            :source-text="message"
+            :source-output="{ cantonese: columns[0].text, mandarin: columns[1].text, english: columns[2].text }"
+            @close="contributeOpen = false"
+        />
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref, reactive, watch } from 'vue'
+import { computed, ref, reactive, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import ContributeModal from './ContributeModal.vue'
+import type { ContributionKind } from '../api/types'
+import { SUPPORTED_LOCALES, setLocale } from '../i18n'
+import type { LocaleCode } from '../i18n'
+
+const { t, locale } = useI18n()
 
 const message = ref('')
 const loading = ref(false)
 
-const examples = ['mm ho gum la', 'we yurk ma', 'now lok che']
+const contributeOpen = ref(false)
+const contributeKind = ref<ContributionKind>('token')
+
+const openContribute = (kind: ContributionKind) => {
+    contributeKind.value = kind
+    contributeOpen.value = true
+}
+
+const examples = ['hoi sem fai lok!', 'mm ho gum la', 'mm goi sai']
 
 const columns = reactive([
     { label: '廣東話', text: '', copied: false },
@@ -77,14 +142,16 @@ const columns = reactive([
     { label: 'English', text: '', copied: false },
 ])
 
+const hasResults = computed(() => columns.some(col => col.text !== ''))
+
 const setResults = (cantonese: string, mandarin: string, english: string) => {
     columns[0].text = cantonese
     columns[1].text = mandarin
     columns[2].text = english
 }
 
-watch(message, (newVal) => {
-    if (!newVal.trim()) {
+watch(message, (value) => {
+    if (!value.trim()) {
         setResults('', '', '')
     }
 })
@@ -118,7 +185,7 @@ const sendMessage = async () => {
         )
     } catch (error) {
         console.error(error)
-        setResults('Failed to connect to backend', '', '')
+        setResults(t('chatbox.connectionError'), '', '')
     } finally {
         loading.value = false
     }
@@ -146,7 +213,8 @@ const copyText = async (col: { text: string; copied: boolean }) => {
 <style scoped>
 .page {
     --card-bg: #fff;
-    --page-bg: #f7f7f8;
+    --header-bg: #fff;
+    --page-bg: #f6faf7;
     --border: #e5e5e7;
     --text-primary: #111114;
     --text-secondary: #6b6b70;
@@ -154,7 +222,16 @@ const copyText = async (col: { text: string; copied: boolean }) => {
     --accent-hover: #185536;
     --pill-bg: #f1f1f3;
 
+    --fs-h1: 1.5rem;
+    --fs-lg: 1.125rem;
+    --fs-md: 1rem;
+    --fs-sm: 0.9375rem;
+    --fs-xs: 0.875rem;
+    --fs-2xs: 0.9375rem;
+
     min-height: 100svh;
+    display: flex;
+    flex-direction: column;
     background: var(--page-bg);
     color: var(--text-primary);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -163,7 +240,8 @@ const copyText = async (col: { text: string; copied: boolean }) => {
 @media (prefers-color-scheme: dark) {
     .page {
         --card-bg: #1c1d22;
-        --page-bg: #131417;
+        --header-bg: #1c1d22;
+        --page-bg: #10241a;
         --border: #2e303a;
         --text-primary: #f3f4f6;
         --text-secondary: #9ca3af;
@@ -176,9 +254,40 @@ const copyText = async (col: { text: string; copied: boolean }) => {
 .header {
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    justify-content: space-between;
+    padding: 0.65rem 2rem;
     border-bottom: 1px solid var(--border);
-    background: var(--card-bg);
+    background: var(--header-bg);
+}
+
+.lang-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.lang-select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.4rem 2rem 0.4rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: var(--fs-2xs);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.lang-select:hover {
+    background: var(--pill-bg);
+}
+
+.lang-caret {
+    position: absolute;
+    right: 0.7rem;
+    pointer-events: none;
+    color: var(--text-secondary);
 }
 
 .brand {
@@ -199,43 +308,39 @@ const copyText = async (col: { text: string; copied: boolean }) => {
 }
 
 .brand-name {
-    font-size: 1.15rem;
+    font-size: var(--fs-lg);
     font-weight: 700;
 }
 
 .content {
+    width: 100%;
     max-width: 46rem;
     margin: 0 auto;
-    padding: 2.5rem 1.5rem 4rem;
+    padding: 2.5rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: var(--fs-h1);
     font-weight: 700;
     margin: 0;
 }
 
 .subtitle {
     color: var(--text-secondary);
-    margin: 0.5rem 0 2rem;
+    font-size: var(--fs-sm);
+    margin: 0.3rem 0 1rem;
 }
 
 .input-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 1.5rem;
-}
-
-.lang-pill {
-    display: inline-block;
-    background: var(--pill-bg);
-    color: var(--text-primary);
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 0.45rem 1rem;
-    border-radius: 999px;
-    margin-bottom: 1rem;
+    padding: 1.75rem;
 }
 
 textarea {
@@ -244,7 +349,7 @@ textarea {
     background: transparent;
     resize: vertical;
     padding: 0;
-    font-size: 1.15rem;
+    font-size: var(--fs-md);
     font-family: inherit;
     color: var(--text-primary);
     box-sizing: border-box;
@@ -260,23 +365,23 @@ textarea::placeholder {
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border);
 }
 
 .char-count {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: var(--fs-2xs);
 }
 
 .translate-btn {
-    padding: 0.6rem 1.6rem;
+    padding: 0.5rem 1.4rem;
     border: none;
     border-radius: 999px;
     background: var(--accent);
     color: white;
-    font-size: 1rem;
+    font-size: var(--fs-xs);
     font-weight: 600;
     cursor: pointer;
 }
@@ -295,9 +400,9 @@ textarea::placeholder {
 }
 
 .results-section h2 {
-    font-size: 1.1rem;
+    font-size: var(--fs-md);
     font-weight: 700;
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.85rem;
 }
 
 .results-card {
@@ -310,7 +415,7 @@ textarea::placeholder {
 }
 
 .result-col {
-    padding: 1.25rem;
+    padding: 1.5rem 1.25rem;
     border-left: 1px solid var(--border);
     display: flex;
     flex-direction: column;
@@ -323,14 +428,14 @@ textarea::placeholder {
 
 .col-label {
     color: var(--text-secondary);
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+    font-size: var(--fs-2xs);
+    margin-bottom: 0.6rem;
 }
 
 .col-text {
     font-weight: 600;
-    font-size: 1.05rem;
-    margin: 0 0 1rem;
+    font-size: var(--fs-md);
+    margin: 0 0 1.1rem;
     word-break: break-word;
 }
 
@@ -344,7 +449,7 @@ textarea::placeholder {
     border-radius: 10px;
     background: transparent;
     color: var(--text-primary);
-    font-size: 0.85rem;
+    font-size: var(--fs-xs);
     cursor: pointer;
 }
 
@@ -357,27 +462,90 @@ textarea::placeholder {
     cursor: not-allowed;
 }
 
+.contribute-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
+}
+
+.contribute-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-primary);
+    font-size: var(--fs-sm);
+}
+
+.contribute-text svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.contribute-actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.contribute-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    font-size: var(--fs-xs);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.contribute-btn svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.contribute-btn:hover {
+    background: var(--pill-bg);
+}
+
 .examples {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.6rem;
-    margin-top: 2rem;
+    margin-top: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
 }
 
 .examples-label {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-primary);
+    font-size: var(--fs-sm);
     margin-right: 0.25rem;
 }
 
 .example-chip {
-    padding: 0.45rem 1rem;
+    padding: 0.4rem 1rem;
     border: 1px solid var(--border);
     border-radius: 999px;
     background: var(--card-bg);
-    color: var(--text-primary);
-    font-size: 0.9rem;
+    color: var(--accent);
+    font-size: var(--fs-xs);
+    font-weight: 600;
     cursor: pointer;
 }
 

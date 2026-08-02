@@ -540,3 +540,128 @@ token,,出pool,,脫單,脱单，找到对象,,False
 token,,摆pose,,摆pose,摆姿势,,False
 token,,蛋tart,,蛋挞,蛋挞,egg tart,False
 token,,車呔,,車呔,轮胎,tyre,False
+token,campus,tut,,tutorial,,tutorial (small-group class),False
+token,campus,adp,,加/退選期,,add-drop period,False
+token,campus,reg,,註冊/報名,,register / registration,False
+token,campus,asm,,功課,,assignment,False
+token,campus,prof,,教授,,professor,False
+token,campus,rn,,而家,,right now,False
+token,campus,tn,,今晚,,tonight,False
+token,campus,leng grade,,靚grade,容易拿A的课,good grade course,False
+token,campus,cc,,Common Core,,Common Core (university course category),True
+phrase,MTR station,kennedy town,,堅尼地城,堅尼地城,Kennedy Town MTR station,False
+phrase,MTR station,sai ying pun,,西營盤,西營盤,Sai Ying Pun MTR station,False
+phrase,MTR station,sheung wan,,上環,上環,Sheung Wan MTR station,False
+token,MTR station,central,,中環,中環,Central MTR station,False
+token,MTR station,admiralty,,金鐘,金鐘,Admiralty MTR station,False
+phrase,MTR station,wan chai,,灣仔,灣仔,Wan Chai MTR station,False
+phrase,MTR station,causeway bay,,銅鑼灣,銅鑼灣,Causeway Bay MTR station,False
+phrase,MTR station,tin hau,,天后,天后,Tin Hau MTR station,False
+phrase,MTR station,fortress hill,,炮台山,炮台山,Fortress Hill MTR station,False
+phrase,MTR station,north point,,北角,北角,North Point MTR station,False
+phrase,MTR station,quarry bay,,鰂魚涌,鰂魚涌,Quarry Bay MTR station,False
+phrase,MTR station,tai koo,,太古,太古,Tai Koo MTR station,False
+phrase,MTR station,sai wan ho,,西灣河,西灣河,Sai Wan Ho MTR station,False
+phrase,MTR station,shau kei wan,,筲箕灣,筲箕灣,Shau Kei Wan MTR station,False
+phrase,MTR station,heng fa chuen,,杏花邨,杏花邨,Heng Fa Chuen MTR station,False
+phrase,MTR station,chai wan,,柴灣,柴灣,Chai Wan MTR station,False
+token,MTR station,jordan,,佐敦,佐敦,Jordan MTR station,False
+phrase,MTR station,yau ma tei,,油麻地,油麻地,Yau Ma Tei MTR station,False
+phrase,MTR station,prince edward,,太子,太子,Prince Edward MTR station,False
+phrase,MTR station,sham shui po,,深水埗,深水埗,Sham Shui Po MTR station,False
+phrase,MTR station,cheung sha wan,,長沙灣,長沙灣,Cheung Sha Wan MTR station,False
+phrase,MTR station,lai chi kok,,荔枝角,荔枝角,Lai Chi Kok MTR station,False
+phrase,MTR station,mei foo,,美孚,美孚,Mei Foo MTR station,False
+phrase,MTR station,lai king,,荔景,荔景,Lai King MTR station,False
+phrase,MTR station,kwai fong,,葵芳,葵芳,Kwai Fong MTR station,False
+phrase,MTR station,kwai hing,,葵興,葵興,Kwai Hing MTR station,False
+phrase,MTR station,tai wo hau,,大窩口,大窩口,Tai Wo Hau MTR station,False
+phrase,MTR station,tsuen wan,,荃灣,荃灣,Tsuen Wan MTR station,False
+token,MTR station,whampoa,,黃埔,黃埔,Whampoa MTR station,False
+phrase,MTR station,ho man tin,,何文田,何文田,Ho Man Tin MTR station,False
+phrase,MTR station,shek kip mei,,石硤尾,石硤尾,Shek Kip Mei MTR station,False
+phrase,MTR station,kowloon tong,,九龍塘,九龍塘,Kowloon Tong MTR station,False
+phrase,MTR station,lok fu,,樂富,樂富,Lok Fu MTR station,False
+phrase,MTR station,wong tai sin,,黃大仙,黃大仙,Wong Tai Sin MTR station,False
+phrase,MTR station,diamond hill,,鑽石山,鑽石山,Diamond Hill MTR station,False
+phrase,MTR station,choi hung,,彩虹,彩虹,Choi Hung MTR station,False
+phrase,MTR station,kowloon bay,,九龍灣,九龍灣,Kowloon Bay MTR station,False
+phrase,MTR station,ngau tau kok,,牛頭角,牛頭角,Ngau Tau Kok MTR station,False
+phrase,MTR station,kwun tong,,觀塘,觀塘,Kwun Tong MTR station,False
+phrase,MTR station,lam tin,,藍田,藍田,Lam Tin MTR station,False
+phrase,MTR station,yau tong,,油塘,油塘,Yau Tong MTR station,False
+phrase,MTR station,tiu keng leng,,調景嶺,調景嶺,Tiu Keng Leng MTR station,False
+phrase,MTR station,hang hau,,坑口,坑口,Hang Hau MTR station,False
+phrase,MTR station,po lam,,寶琳,寶琳,Po Lam MTR station,False
+phrase,MTR station,hong kong,,香港,香港,Hong Kong MTR station,False
+token,MTR station,kowloon,,九龍,九龍,Kowloon MTR station,False
+token,MTR station,olympic,,奧運,奧運,Olympic MTR station,False
+phrase,MTR station,nam cheong,,南昌,南昌,Nam Cheong MTR station,False
+phrase,MTR station,tsing yi,,青衣,青衣,Tsing Yi MTR station,False
+phrase,MTR station,sunny bay,,欣澳,欣澳,Sunny Bay MTR station,False
+phrase,MTR station,tung chung,,東涌,東涌,Tung Chung MTR station,False
+phrase,MTR station,disneyland resort,,迪士尼,迪士尼,Disneyland Resort MTR station,False
+token,MTR station,airport,,機場,機場,Airport MTR station,False
+token,MTR station,asiaworld-expo,,博覽館,博覽館,Asiaworld-Expo MTR station,False
+phrase,MTR station,exhibition centre,,會展,會展,Exhibition Centre MTR station,False
+phrase,MTR station,hung hom,,紅磡,紅磡,Hung Hom MTR station,False
+phrase,MTR station,mong kok east,,旺角東,旺角東,Mong Kok East MTR station,False
+phrase,MTR station,tai wai,,大圍,大圍,Tai Wai MTR station,False
+phrase,MTR station,sha tin,,沙田,沙田,Sha Tin MTR station,False
+phrase,MTR station,fo tan,,火炭,火炭,Fo Tan MTR station,False
+token,MTR station,racecourse,,馬場,馬場,Racecourse MTR station,False
+token,MTR station,university,,大學,大學,University MTR station,False
+phrase,MTR station,tai po market,,大埔墟,大埔墟,Tai Po Market MTR station,False
+phrase,MTR station,tai wo,,太和,太和,Tai Wo MTR station,False
+token,MTR station,fanling,,粉嶺,粉嶺,Fanling MTR station,False
+phrase,MTR station,sheung shui,,上水,上水,Sheung Shui MTR station,False
+phrase,MTR station,lo wu,,羅湖,羅湖,Lo Wu MTR station,False
+phrase,MTR station,lok ma chau,,落馬洲,落馬洲,Lok Ma Chau MTR station,False
+token,MTR station,tko,,將軍澳,將軍澳,Tseung Kwan O MTR station,False
+token,MTR station,tst,,尖沙咀,尖沙咀,Tsim Sha Tsui MTR station,False
+token,MTR station,lohas,,康城,康城,LOHAS Park MTR station,False
+token,MTR station,hku,,香港大學,香港大學,HKU (station & university),False
+token,university,poly,polyu,香港理工大學,香港理工大學,PolyU (Hong Kong Polytechnic University),False
+token,university,ust,,香港科技大學,香港科技大學,HKUST (Hong Kong University of Science and Technology),False
+token,MTR station,mk,,旺角,旺角,Mong Kok MTR station,True
+phrase,campus,ging guo,,勁過,考試/成績很好(GPA≥3.0，也用作打氣語),doing great / GPA>=3.0 (also used as an exam-time greeting),False
+phrase,campus,tui guo,,頹過,勉強及格(GPA 2-2.9),passed with a mediocre GPA (2.0-2.9),False
+phrase,campus,m guo,,唔過,不及格(GPA過低未能過關),failed to pass (GPA below the passing threshold),False
+phrase,campus,guo saam,,過三,GPA高於3,GPA above 3.0,False
+phrase,campus,baau sei,,爆四,GPA接近或等於4(近滿分),GPA near or at 4.0 (near-perfect),False
+phrase,campus,tin dei tong,,天地堂,一日之內課堂間隔極長,class schedule with a huge gap between classes on the same day,False
+token,campus,zong,,莊,大學學會/學生會的內閣,"student society/union's committee (""cabinet"")",False
+phrase,campus,soeng zong,,上莊,擔任學會/學生會幹事,serve as an officer in a student society/union,False
+phrase,campus,zong jau,,莊友,同屆學會幹事,fellow officers of the same committee,False
+phrase,campus,ziu zong,,招莊,招募下一屆幹事,recruiting the next committee,False
+phrase,campus,king zong,,傾莊,商討來年學會計劃,discuss next year's plans for the committee,False
+phrase,campus,zyun zong,,轉莊,新舊幹事交接,handover between old and new committee,False
+phrase,campus,lok zong,,落莊,幹事任期結束卸任,stepping down after a committee term,False
+token,campus,se,,蛇,非宿生偷偷留宿,a non-resident secretly staying overnight in a dorm,False
+phrase,campus,wat se,,屈蛇,非宿生偷偷留宿(動詞),to secretly stay overnight in a dorm as a non-resident,False
+phrase,campus,jyun jyun se,,鴛鴦蛇,偷偷留宿異性宿舍,secretly staying overnight in an opposite-gender dorm,False
+phrase,campus,daa se,,打蛇,校方巡查非法留宿,dorm staff checking for illegal overnight stayers,False
+phrase,campus,teoi jau,,頹友,無心向學、只求合格的人,"someone who doesn't study seriously, just aims to pass",False
+phrase,campus,zip jau,,摺友,不參加社交、只顧自己的人,someone who avoids socializing and stays in their own world,False
+phrase,campus,zip laa baa,,摺拉把,經常躲圖書館溫書、不參加活動的人,"someone always in the library studying, never joining activities",False
+phrase,campus,saat jan wong,,殺人王,評分極嚴苛的老師,a professor who grades extremely harshly,False
+phrase,campus,saat sau,,殺手,評分極嚴苛的老師(同殺人王),a professor who grades extremely harshly (same as 殺人王),False
+token,campus,nds,,NDS,內地生(取普通話拼音Nei Di Sheng),mainland Chinese student,False
+token,campus,psp,,PSP,內地生(Putonghua Speaking People),mainland Chinese student (Putonghua Speaking People),False
+phrase,campus,chiu sin,,超仙,大四學長,4th-year senior student,False
+phrase,campus,daai sin,,大仙,大三學長,3rd-year senior student,False
+phrase,campus,sai sin,,細仙,大二學長,2nd-year senior student,False
+phrase,campus,lou gwai,,老鬼,已畢業的學生(尤指前任幹事),"a graduated alum, especially a former committee officer",False
+phrase,campus,free rider,,Free Rider,小組作業中不負責任的組員,a group project member who doesn't contribute,False
+token,campus,sem,,Sem,學期(Semester),semester,False
+phrase,campus,teoi faan,,頹飯,大學飯堂低價但質素差的飯餐,"cheap, low-quality canteen meal",False
+phrase,campus,saat pei,,撻皮,做事散漫不積極,"careless, lazy attitude towards responsibilities",False
+phrase,campus,bj zai,,BJ仔,博盡仔，拼盡全力做事的人,"someone who gives their all-out effort (""博盡仔"")",False
+token,campus,bjmf,,BJMF,搏盡無悔，全力以赴無悔,"""all-out effort, no regrets"" (""搏盡無悔"")",False
+token,campus,su,,SU,學生會(Student Union),Student Union,False
+token,campus,hall,,Hall,大學宿舍,university dormitory,False
+phrase,campus,laai baa,,拉把,圖書館(取library的libra發音),"library (from the ""libra"" part of ""library"")",False
+phrase,campus,gau can,,舊Can,舊飯堂(相對新飯堂而言),the older canteen (as opposed to a newer one),False
+phrase,campus,san can,,新Can,新落成的飯堂,a newly built canteen,False
+phrase,campus,fresh grad,,Fresh Grad,剛畢業的大學生,a recently graduated university student,False
+token,campus,freshman,,Freshman,新入學的大一學生,a first-year university student,False

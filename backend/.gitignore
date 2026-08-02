@@ -4,3 +4,6 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+
+# User submissions — holds contributor names/emails, keep it out of git
+data/contributions.db

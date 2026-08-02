@@ -1,29 +1,61 @@
 category,Sentence,Cantonese,Mandarin,English
-A_covered,gayau aa faai dou aa,加油啊，快到啊,加油啊，快到了,"Keep going, we're almost there!"
-A_covered,ngo siu sei aa,我笑死啊,我笑死了,I'm dying of laughter
-A_covered,kui hou fut hai,佢好佛系,他很佛系,He's very laid-back/apathetic about things
-A_covered,nigo poutau hou fuk,呢個舖頭好伏,这家店很坑,This shop is a total trap/scam
+A_covered,gayau ah fai dou la,加油啊，快到啦,加油啊，快到了,"Keep going, we're almost there!"
+A_covered,siu sei me,笑死我了,笑死我了,I'm dying of laughter
+A_covered,kui ho fut hai,佢好佛系,他很佛系,He's very laid-back/apathetic about things
+A_covered,nigo poutau ho fuk,呢個舖頭好伏,这家店很坑,This shop is a total trap/scam
 B_novel,kui dak sei,佢抵死,他活该,Serves him right
-A_covered,wui shui aa mm ho,回水啊，唔該,退款吧，谢谢,"Can I get a refund, please?"
+A_covered,wui shui la mm goi,回水啦，唔該,退款吧，谢谢,"Can I get a refund, please?"
 A_covered,gum yeung zan hai gg la,咁樣真係GG喇,这样真的完蛋了,This is really game over
 A_covered,kui hou mou lei tau,佢好無厘頭,他很无厘头,He's so random/nonsensical
 A_covered,ni geen si zan hai juet juet zi,呢件事真係絕絕子,这件事真的绝了,This whole thing is just next-level (could be amazing or terrible)
-A_covered,nei hou din aa,你好癲啊,你好疯啊,You're being so wild/crazy
-B_novel,kui hou on9,佢好戇鳩,他很蠢,He's really dumb/stubbornly stupid
-B_novel,ni gin si hou gaau1,呢件事鳩,这件事很离谱,This whole thing is ridiculous
-B_novel,kui hou sup dak,佢好濕碌,他很毛躁笨手笨脚,He's clumsy and scatterbrained
+A_covered,nei ho din ah,你好癲啊,你好疯啊,You're being so wild/crazy
+B_novel,kui ho on9,佢好戇鳩,他很蠢,He's really dumb/stubbornly stupid
+B_novel,ni gin si ho 9,呢件事鳩,这件事很离谱,This whole thing is ridiculous
 B_novel,nei jou ye hou lan5 zaa3,你做嘢好懶㗎,你做事很懒散,You're being lazy about this
 B_novel,kui zung yi biu jin,佢鍾意標韌,他喜欢炫耀,He likes to show off
-B_novel,ni go plan hou chi sai,呢個plan好徙西,这个计划很离谱,This plan is a mess
+B_novel,ni go plan ho chi sin,呢個plan好痴線,这个计划很离谱,This plan is a mess
 B_novel,kui hou ngau6,佢好㹴,他很自大嚣张,He's really arrogant/full of himself
-B_novel,nei zou mat gam hyun,你做乜咁樣,你干嘛这样,Why are you being so wishy-washy/scared
-B_novel,kui gin sik zan hai jerng,佢見識真係正,他见识真的很棒,He's really knowledgeable/impressive
+B_novel,nei zou mat gum,你做乜咁,你干嘛这样,Why are you being so wishy-washy/scared
+B_novel,kui gin sik zan hai jeng,佢見識真係正,他见识真的很棒,He's really knowledgeable/impressive
 B_novel,ni pai je zan hai bad taste,呢啲嘢真係bad taste,这些东西真的很没品味,This stuff is really bad taste
 C_baseline,nei sik zo faan mei aa,你食咗飯未呀,你吃饭了没,Have you eaten yet?
 C_baseline,yi ga gei dim aa,而家幾點呀,现在几点,What time is it now?
 C_baseline,ting yat gin,聽日見,明天见,See you tomorrow
-C_baseline,nei hai bin dou aa,你喺邊度呀,你在哪里,Where are you?
+C_baseline,nei hai bin dou ahh,你喺邊度呀,你在哪里,Where are you?
 C_baseline,ngo dei heoi sik ye aa,我哋去食嘢啊,我们去吃东西吧,Let's go eat something
+C_baseline,mm goi sai,唔該晒,谢谢,Thank you very much
+C_baseline,deng ha ngo la,等下我啦,等我一下,Wait for me
+C_baseline,nei daai zo je mei aa,你帶咗遮未呀,你带伞了没,Did you bring an umbrella?
+D_chatlog,Hii nei zi mm zi when start add-drop a?,hii 你知唔知幾時開始adp？,,
+D_chatlog,Ho chi hai 2.14?,好似係2.14,,
+D_chatlog,Nei shrg choose which cc? ngo follow you,你想揀邊個cc？我跟你,,
+D_chatlog,Emmm ccch9018? My frd said leng grade,emmm ccch9018？我frd話靚grade,,
+D_chatlog,"Ok then ccch9018, we can select the same tut later!",ok then ccch9018 我地之後可以揀同一個tut！,,
+D_chatlog,Okkk rmb dousi yiu reg,okk 記得到時搶！,,
+D_chatlog,Pk ngo forgot yiu submit asm,仆街 我唔記得交asm,,
+D_chatlog,Omg nei faidi send email bei prof ask can mm can late submit,omg 你快d email prof得唔得補交,,
+D_chatlog,Okkk later end lesson ngo hui ask har,好我陣間落堂ask ha,,
+D_chatlog,Hii this week yurk ma,今個禮拜yurk ma？,,
+D_chatlog,"ho ahhh, Mon?",好啊，Mon？,,
+D_chatlog,"Mon ngo mm duc, yiu bok zap, Tue can ma?",Mon我唔得，要幫人補習，Tue 可以嗎,,
+D_chatlog,horyi eat lunch tgt,可以一起食lunch,,
+D_chatlog,Objectify jor zigei,物化左自己,,
+D_chatlog,Wui mm wui ngo hai the earliest,會晤會我係最早到的,,
+D_chatlog,I tst liu,我到尖沙咀鳥（語氣詞）,,
+D_chatlog,Ngo mm gum liu,我唔敢鳥,,
+D_chatlog,Next week u joi join ba,下個禮拜你再加入吧,,
+A_covered,gayau aa faai dou aa,加油啊，快到啊,加油啊，快到了,"Keep going, we're almost there!"
+A_covered,ngo siu sei aa,我笑死啊,我笑死了,I'm dying of laughter
+A_covered,kui hou fut hai,佢好佛系,他很佛系,He's very laid-back/apathetic about things
+A_covered,nigo poutau hou fuk,呢個舖頭好伏,这家店很坑,This shop is a total trap/scam
+A_covered,wui shui aa mm ho,回水啊，唔該,退款吧，谢谢,"Can I get a refund, please?"
+A_covered,nei hou din aa,你好癲啊,你好疯啊,You're being so wild/crazy
+B_novel,kui hou on9,佢好戇鳩,他很蠢,He's really dumb/stubbornly stupid
+B_novel,ni gin si hou gaau1,呢件事鳩,这件事很离谱,This whole thing is ridiculous
+B_novel,kui hou sup dak,佢好濕碌,他很毛躁笨手笨脚,He's clumsy and scatterbrained
+B_novel,ni go plan hou chi sai,呢個plan好徙西,这个计划很离谱,This plan is a mess
+B_novel,nei zou mat gam hyun,你做乜咁樣,你干嘛这样,Why are you being so wishy-washy/scared
+B_novel,kui gin sik zan hai jerng,佢見識真係正,他见识真的很棒,He's really knowledgeable/impressive
+C_baseline,nei hai bin dou aa,你喺邊度呀,你在哪里,Where are you?
 C_baseline,m goi saai,唔該晒,谢谢,Thank you very much
 C_baseline,deng ha ngo aa,等下我呀,等我一下,Wait for me
-C_baseline,nei daai zo je mei aa,你帶咗遮未呀,你带伞了没,Did you bring an umbrella?

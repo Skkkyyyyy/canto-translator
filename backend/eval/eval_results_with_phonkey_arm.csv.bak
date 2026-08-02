@@ -1,0 +1,260 @@
+category,query,ref_cantonese,ref_mandarin,ref_english,none_output,none_correct,legacy_output,legacy_correct,new_output,new_correct
+A_covered,gayau aa faai dou aa,加油啊，快到啊,加油啊，快到了,"Keep going, we're almost there!","粵語：加油啊，快到啊
+普通話：假货啊，太废了
+English：Fake stuff, so useless!",,"粵語：假貨啊，好廢啊
+普通話：加油啊，费用都平摊
+English：Keep it up, the cost is split.",,"粵語：加油啊發都啊
+普通話：加油啊，發都㗎啦（或：加油啊，肯定能發財）
+English：Keep it up, you'll definitely get rich! / Keep pushing, wealth is on its way!",
+A_covered,ngo siu sei aa,我笑死啊,我笑死了,I'm dying of laughter,"粵語：我細少呀
+普通話：我還小呢
+English：I'm still young",,"粵語：我笑死呀
+普通話：笑死我了
+English：I'm dying of laughter",,"粵語：我笑死啊
+普通話：我笑死了
+English：I'm dying of laughter / So funny",
+A_covered,kui hou fut hai,佢好佛系,他很佛系,He's very laid-back/apathetic about things,"粵語：貴好福海
+普通話：贵好福海
+English：Gwai Hou Fuk Hoi (likely a proper noun/name)",,"粵語：幾好佛系
+普通話：挺佛系的 / 很佛系
+English：Quite chill / Very laid-back",,"粵語：佢好佛系
+普通話：他/她很佛系
+English：He/She is very laid-back / chill",
+A_covered,nigo poutau hou fuk,呢個舖頭好伏,这家店很坑,This shop is a total trap/scam,"粵語：你個包袱好福
+普通話：你的包袱好福
+English：Your baggage is good fortune",,"粵語：你個蒲頭好伏
+普通話：你這人很會套路/很會騙人
+English：You're very tricky/misleading. / You're full of it.",,"粵語：nigo(疑為「我」ngo) 蒲頭好伏
+普通話：（疑似“我”）露面挺有诈的
+English：(Probably ""I"") showing up is pretty sketchy/deceptive.",
+B_novel,kui dak sei,佢抵死,他活该,Serves him right,"粵語：貴得死
+普通話：贵死了 / 贵得要死
+English：Extremely expensive / costs a fortune",,"粵語：佢得死
+普通話：他/她活该
+English：He/She deserved it",,"粵語：佢得死
+普通話：他/她活该
+English：He/she deserves it / Serves him/her right",
+A_covered,wui shui aa mm ho,回水啊，唔該,退款吧，谢谢,"Can I get a refund, please?","粵語：會水呀唔好
+普通話：會變稀的，不太好。
+English：It might be watery, which isn't good. / Don't want it to be watery.",,"粵語：回水啊唔好
+普通話：退款啊不行 / 别退款
+English：Refunding isn't okay / Don't refund.",,"粵語：回水啊唔好
+普通話：退款啊，不行／別退錢啊
+English：No refunds, please. / Don't do refunds.",
+A_covered,gum yeung zan hai gg la,咁樣真係GG喇,这样真的完蛋了,This is really game over,"粵語：根樣嘅啦
+普通話：跟樣子的啦 / 就那樣啦
+English：Just like that / It's the same kind.",,"粵語：咁樣先係GG啦
+普通話：这样就算完蛋了
+English：That's basically GG / So we're done for.",,"粵語：咁樣正係GG啦
+普通話：這樣就完蛋了。
+English：That means we're done for.",
+A_covered,kui hou mou lei tau,佢好無厘頭,他很无厘头,He's so random/nonsensical,"粵語：貴好唔類頭
+普通話：贵好唔类头（存疑）
+English：Expensive good not type head (unclear)",,"粵語：鬼好無厘頭
+普通話：太无厘头了 / 特别荒谬
+English：So absurd / Really nonsensical",,"粵語：佢好無厘頭
+普通話：他/她太无厘头了
+English：He/She's so nonsensical.",
+A_covered,ni geen si zan hai juet juet zi,呢件事真係絕絕子,这件事真的绝了,This whole thing is just next-level (could be amazing or terrible),"粵語：你個係讚好絕絕子
+普通話：你的点赞超级多 / 你的内容超棒
+English：Your likes are super high / super good.",,"粵語：呢個女仔係絕絕子
+普通話：这个女生真的绝了
+English：This girl is absolutely amazing",,"粵語：呢個係真係絕絕子
+普通話：这个真的是绝绝子（非常棒）
+English：This is really amazing / This is absolutely fantastic",
+A_covered,nei hou din aa,你好癲啊,你好疯啊,You're being so wild/crazy,"粵語：你好點呀？
+普通話：你好嗎？／你怎麼樣？
+English：How are you? / How are you doing?",,"粵語：你好癲啊
+普通話：你好疯啊
+English：You're so crazy.",,"粵語：你好頂啊！
+普通話：你好煩啊！／真是夠了！
+English：You're so damn annoying! / That's so frustrating!",
+B_novel,kui hou on9,佢好戇鳩,他很蠢,He's really dumb/stubbornly stupid,"粵語：鬼好運
+普通話：运气真好 / 真他妈好运
+English：Damn good luck / Freaking lucky",,"粵語：佢好戇
+普通話：他/她好傻
+English：He/She's so stupid.",,"粵語：佢好戇鳩
+普通話：他/她真蠢／他/她是个傻瓜
+English：He/She's so dumb / He/She's an idiot.",
+B_novel,ni gin si hou gaau1,呢件事鳩,这件事很离谱,This whole thing is ridiculous,"粵語：你見事好高（存疑）
+普通話：你見事情很高
+English：You see things as very high",,"粵語：呢件事好搞
+普通話：这件事好搞 / 这件事很好办
+English：This thing is easy to handle / This matter is straightforward.",,"粵語：你勁係好高
+普通話：你真的很高
+English：You're really quite tall.",
+B_novel,kui hou sup dak,佢好濕碌,他很毛躁笨手笨脚,He's clumsy and scatterbrained,"粵語：貴好死嘅
+普通話：好貴啊／貴死了
+English：So expensive / It's so damn expensive.",,"粵語：佢好舒服
+普通話：他/她很舒服
+English：He/She feels very comfortable.",,"粵語：佢好[受/識]得
+普通話：他/她挺能扛的／他/她很熟悉
+English：He/she handles it well / He/she knows it well",
+B_novel,nei jou ye hou lan5 zaa3,你做嘢好懶㗎,你做事很懒散,You're being lazy about this,"粵語：你有啲好難喇
+普通話：你现在挺不容易的
+English：You're having a tough time / It's pretty hard for you now.",,"粵語：你都有好爛咋
+普通話：你也有够烂的 / 你都有点坏啊
+English：You're pretty rotten/bad, huh?",,"粵語：你咁好懶咋（jou/ye 存疑；lan5 標為存疑，此處依語境取「懶」義；zaa3 標為存疑，作語氣詞「咋」）
+普通話：你怎麼這麼懶啊？／你真的那麼懶嗎？
+English：You're so lazy, huh? / Are you really that lazy?",
+B_novel,kui zung yi biu jin,佢鍾意標韌,他喜欢炫耀,He likes to show off,"粵語：貴種一表金
+普通話：貴種一表金
+English：A noble child, a golden appearance (idiomatic praise for someone's fine lineage and striking looks)",,"粵語：佢總以為緊
+普通話：他/她總以為 / 他/她一直以為
+English：He/She always thinks / He/She keeps assuming",,"粵語：佢正一彪勁
+普通話：他/她真的很厲害／很酷
+English：He/She's really awesome.",
+B_novel,ni go plan hou chi sai,呢個plan好徙西,这个计划很离谱,This plan is a mess,"粵語：你個plan好痴線
+普通話：你的计划太离谱了
+English：Your plan is so crazy",,"粵語：呢個計劃好似先
+普通話：這個計劃好像先 / 這個計劃看起来好像
+English：This plan seems like... / This plan looks like...",,"粵語：呢個計劃好似死
+普通話：这个计划看起来要黄了／看起来很糟
+English：This plan looks doomed / looks terrible.",
+B_novel,kui hou ngau6,佢好㹴,他很自大嚣张,He's really arrogant/full of himself,"粵語：貴好牛
+普通話：贵又好牛 / 贵得牛
+English：Expensive and awesome / So expensive it's badass",,"粵語：佢好牛
+普通話：他/她太牛了 / 他/她真厉害
+English：He/she is so awesome / He/she's really impressive",,"粵語：佢好嘅
+普通話：他/她挺好的
+English：He/She is fine / pretty good",
+B_novel,nei zou mat gam hyun,你做乜咁樣,你干嘛这样,Why are you being so wishy-washy/scared,"粵語：你做咩咁懸？
+普通話：你干嘛这么奇怪/可疑？
+English：Why are you acting so sketchy? / What are you doing that's so weird?",,"粵語：你做乜咁嘢
+普通話：你干嘛这样啊？
+English：Why are you doing that? / What's with you doing that?",,"粵語：你做乜咁訓？
+普通話：你怎么这么困？
+English：Why are you so sleepy?",
+B_novel,kui gin sik zan hai jerng,佢見識真係正,他见识真的很棒,He's really knowledgeable/impressive,"粵語：貴銀食嘅係整
+普通話：吃的是贵银，是整的
+English：What you're eating is expensive silver, it's made (of it)",,"粵語：佢勁識讚係正
+普通話：他真的很會誇人，太讚了
+English：He's really good at giving compliments, it's awesome/legit.",,"粵語：佢勁識，正係真（jerng 不確定）
+普通話：他真的很厉害，特别懂行，确实很棒。
+English：He's really skilled and awesome.",
+B_novel,ni pai je zan hai bad taste,呢啲嘢真係bad taste,这些东西真的很没品味,This stuff is really bad taste,"粵語：你派啲展係bad taste
+普通話：你派的那个展品味太差了
+English：The exhibition you're handing out flyers for is so bad taste.",,"粵語：呢啲嘢真係bad taste
+普通話：這些東西真的bad taste
+English：These things are really bad taste",,"粵語：呢派嘢真係bad taste
+普通話：這類的東西真的很沒品味（或很噁心）
+English：This kind of stuff is really bad taste. / This is really tacky.",
+C_baseline,nei sik zo faan mei aa,你食咗飯未呀,你吃饭了没,Have you eaten yet?,"粵語：你食咗飯未呀？
+普通話：你吃饭了吗？
+English：Have you eaten yet?",,"粵語：你食咗飯未呀？
+普通話：你吃饭了吗？
+English：Have you eaten yet?",,"粵語：你食咗飯未呀？
+普通話：你吃饭了吗？
+English：Have you eaten yet?",
+C_baseline,yi ga gei dim aa,而家幾點呀,现在几点,What time is it now?,"粵語：一個幾咁呀？
+普通話：一個多少錢？
+English：How much is one?",,"粵語：而家幾點呀？
+普通話：现在几点呀？
+English：What time is it now?",,"粵語：而家幾點啊？
+普通話：现在几点了？
+English：What time is it now?",
+C_baseline,ting yat gin,聽日見,明天见,See you tomorrow,"粵語：停一見
+普通話：停一下看看
+English：Take a look / Have a look",,"粵語：頂住勁
+普通話：頂住，很厲害／加油，很強
+English：Keep it up, awesome! / Hold on, it's tough!",,"粵語：聽日勁
+普通話：明天会很厉害
+English：Tomorrow will be awesome",
+C_baseline,nei hai bin dou aa,你喺邊度呀,你在哪里,Where are you?,"粵語：你喺邊度呀
+普通話：你在哪儿呀？
+English：Where are you?",,"粵語：你係邊度呀？
+普通話：你在哪里？
+English：Where are you?",,"粵語：你係邊度呀？
+普通話：你在哪？
+English：Where are you?",
+C_baseline,ngo dei heoi sik ye aa,我哋去食嘢啊,我们去吃东西吧,Let's go eat something,"粵語：我得去食嘢呀
+普通話：我可以去吃点东西呀
+English：I can go grab a bite. / I can go eat something.",,"粵語：我哋去食嘢呀
+普通話：我们去吃饭呀
+English：We're going to eat / Let's go grab some food.",,"粵語：我哋去食嘢啊
+普通話：我们去吃饭吧
+English：Let's go eat.",
+C_baseline,m goi saai,唔該晒,谢谢,Thank you very much,"粵語：唔該晒
+普通話：非常感谢 / 多谢
+English：Thank you very much / Thanks a lot",,"粵語：唔該晒
+普通話：非常感谢 / 多谢
+English：Thanks a lot / Thank you very much",,"粵語：唔貴晒
+普通話：不贵啊 / 一点也不贵
+English：Not expensive at all / pretty cheap",
+C_baseline,deng ha ngo aa,等下我呀,等我一下,Wait for me,"粵語：等我下呀
+普通話：等我一下呀
+English：Wait for me a sec / Give me a moment",,"粵語：等下我呀
+普通話：等我一下 / 等我啊
+English：Wait for me / Give me a sec",,"粵語：等吓我呀
+普通話：等我一下呀
+English：Wait for me a sec / Hold on a sec",
+C_baseline,nei daai zo je mei aa,你帶咗遮未呀,你带伞了没,Did you bring an umbrella?,"粵語：你大做嘢咩呀？
+普通話：你在搞什么大动作吗？/ 你这么大张旗鼓做什么呀？
+English：What are you making such a big deal out of? / What's with the big production?",,"粵語：你食咗飯未呀？
+普通話：你吃饭了没？
+English：Have you eaten yet?",,"粵語：你帶咗嘢未呀？
+普通話：你带东西了吗？
+English：Did you bring the stuff? / Have you brought it yet?",
+D_chatlog,Hii nei zi mm zi when start add-drop a?,hii 你知唔知幾時開始adp？,,,"粵語：嗨，你知唔知幾時開始加退選呀？
+普通話：嗨，你知道什麼時候開始加退選嗎？
+English：Hey, do you know when the add/drop period starts?",,"粵語：嗨，你知唔知幾時開始加退選呀？
+普通話：嗨，你知道什么时候开始加退选吗？
+English：Hey, do you know when add-drop starts?",,"粵語：嗨你知唔知幾時開始加退選呀？
+普通話：嗨，你知道什么时候开始加退选吗？
+English：Hey, do you know when add-drop starts?",
+D_chatlog,Ho chi hai 2.14?,好似係2.14,,,"粵語：好幾時？2.14？
+普通話：几点？2月14号？
+English：What time? Feb 14th?",,"粵語：好似係2.14？
+普通話：好像是2月14号？
+English：Seems like Feb 14?",,"粵語：好似係2月14日？
+普通話：好像是2月14日？
+English：Looks like Feb 14th?",
+D_chatlog,Nei shrg choose which cc? ngo follow you,你想揀邊個cc？我跟你,,,"粵語：你揀邊個CC？我跟你。
+普通話：你想選哪個CC？我跟著你。
+English：Which CC do you want to pick? I'll follow you.",,"粵語：你揀邊個睇睇？我跟住你。
+普通話：你挑哪个看看？我跟着你。
+English：Which one do you want to check out? I'll follow you.",,"粵語：你想揀邊個睇睇？我跟咗你。
+普通話：你想選哪個看看？我跟著你了。
+English：Which one do you want to pick and check out? I'll follow you.",
+D_chatlog,Emmm ccch9018? My frd said leng grade,emmm ccch9018？我frd話靚grade,,,"粵語：呃… ccch9018？我朋友話冷等級。
+普通話：呃……ccch9018？我朋友说是冷等级。
+English：Hmm... ccch9018? My friend said cold grade.",,"粵語：呃... ccch9018？我朋友話好靚嘅等級。
+普通話：呃……ccch9018？我朋友说挺好看的级别。
+English：Umm... ccch9018? My friend said it's a pretty level.",,"粵語：嗯嗯，ccch9018？我個朋友話成積好靚。
+普通話：嗯嗯，ccch9018？我朋友说成绩很好。
+English：Umm, ccch9018? My friend said the grade is really good.",
+D_chatlog,"Ok then ccch9018, we can select the same tut later!",ok then ccch9018 我地之後可以揀同一個tut！,,,"粵語：好呀 ccch9018，我哋遲啲可以揀同一個導修㗎！
+普通話：好的 ccch9018，我们晚点可以选同一个导修课！
+English：Alright ccch9018, we can pick the same tutorial later!",,"粵語：OK啦 ccch9018，我哋遲啲揀同一間導修就得㗎喇！
+普通話：好的啦 ccch9018，我们迟点选同一个导修课就行！
+English：Alright ccch9018, we can pick the same tutorial later!",,"粵語：OK 啦 CCCH9018，我哋遲啲可以揀同一個 tut 㗎！
+普通話：好呀 CCCH9018，我们晚点可以选同一个辅导课！
+English：Alright CCCH9018, we can pick the same tutorial later!",
+D_chatlog,Okkk rmb dousi yiu reg,okk 記得到時搶！,,,"粵語：OKKK 記得都係要啦
+普通話：好的，记得还是要的
+English：OKKK, remember it's still needed",,"粵語：OKKK 記得都係要啦
+普通話：好的，记得还是要的
+English：OKKK, remember it's still needed",,"粵語：好，記住都係要註冊。
+普通話：好的，记得还是要注册。
+English：Okay, remember you still need to register.",
+D_chatlog,Pk ngo forgot yiu submit asm,仆街 我唔記得交asm,,,"粵語：PK我唔記得你要交ASM
+普通話：PK，我忘了你要交ASM。
+English：PK, I forgot you needed to submit the ASM.",,"粵語：Pk 我忘記要提交 ASM。
+普通話：Pk，我忘记要提交 ASM 了。
+English：Pk, I forgot to submit the ASM.",,"粵語：PK 我唔記得要 submit ASM
+普通話：PK，我忘记要提交申请了。
+English：PK, I forgot I had to submit the application.",
+D_chatlog,Omg nei faidi send email bei prof ask can mm can late submit,omg 你快d email prof得唔得補交,,,"粵語：OMG 你發咗電郵俾教授問可唔可以遲交？
+普通話：哇，你发邮件问教授能不能迟交？
+English：OMG, you emailed the professor to ask if you can submit it late?",,"粵語：OMG 你發咗電郵俾教授問得唔得遲交？
+普通話：OMG 你发邮件问教授能不能晚点交？
+English：OMG did you email the professor asking if you can submit it late?",,"粵語：OMG 你發咗email俾教授問得唔得遲交？
+普通話：天啊，你发邮件问教授能不能晚点交？
+English：OMG, you emailed the professor asking if you can submit it late?",
+D_chatlog,Okkk later end lesson ngo hui ask har,好我陣間落堂ask ha,,,"粵語：OK，遲啲下堂我會問啦。
+普通話：好的，等下课了我再问吧。
+English：OK, I'll ask later after class.",,"粵語：OK，遲啲堂完我會問吓。
+普通話：OK，等下课了我问一下。
+English：OK, I'll ask when class ends later.",,"粵語：OK，遲啲下堂完我去問吓。
+普通話：好的，下课了我再去问。
+English：Okay, I'll go ask after class.",
