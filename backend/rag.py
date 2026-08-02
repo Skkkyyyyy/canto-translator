@@ -28,8 +28,9 @@ DATA = Path(__file__).parent / "data"
 ## direct match 
 ## fuzzy match
 ## embedding models + vector DB +  check vector similarity 
-from normalizer import normalizer  #from module import function 
+from normalizer import normalizer  #from module import function
 import nltk
+nltk.data.path.append(str(Path(__file__).parent / "nltk_data"))
 from nltk.tokenize import word_tokenize
 import pandas as pd
 from thefuzz import fuzz, process
